@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:include schemaLocation="classes.xsd"/>
+	<xs:element name="root" type="EffectList"/>
+	<xs:complexType name="EffectWithId">
+			<xs:complexContent>
+				<xs:extension base="EGL__EffectsProps__EffectData">
+					<xs:sequence>
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EffectList">
+		<xs:sequence>
+			<xs:element name="Effect" minOccurs="0" maxOccurs="unbounded" type="EffectWithId"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

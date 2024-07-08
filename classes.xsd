@@ -427,6 +427,29 @@
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="ERwTools__CCameraSettings">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject">
+					<xs:sequence>
+						<xs:element name="Angle" type="xs:int"/>
+						<xs:element name="FOV" type="xs:float"/>
+						<xs:element name="DeafultPosition">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="x" type="xs:float"/>
+									<xs:element name="y" type="xs:float"/>
+									<xs:element name="z" type="xs:float"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="RotationLimit" type="xs:int"/>
+						<xs:element name="ScrollingDirection" type="xs:boolean"/>
+						<xs:element name="UpLowLimit" type="xs:float"/>
+						<xs:element name="UpHighLimit" type="xs:float"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="EGL__CNetEventEntityIDAnd2Integer">
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityID">
@@ -3996,7 +4019,7 @@
 						<xs:element name="CanFloat" type="xs:boolean"/>
 						<xs:element name="CanDrown" type="xs:boolean"/>
 						<xs:element name="MapFileDontSave" type="xs:boolean"/>
-						<xs:element name="Race"/>
+						<xs:element name="Race" type="xs:string"/>
 						<xs:element name="NeedsPlayer" type="xs:boolean"/>
 						<xs:element name="ForceNoPlayer" type="xs:boolean"/>
 						<xs:element name="MaxHealth" type="xs:int"/>
@@ -6026,5 +6049,171 @@
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EGL__EffectsProps__EffectData">
+			<xs:sequence>
+				<xs:element name="Logic" type="BB__IObject"/>
+				<xs:element name="Display" type="BB__IObject"/>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="shok__Technology">
+			<xs:sequence>
+				<xs:element name="TecCategoryType" type="xs:string"/>
+				<xs:element name="TimeToResearch" type="xs:float"/>
+				<xs:element name="AutomaticResearch" type="xs:boolean"/>
+				<xs:element name="ResourceCosts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Gold" type="xs:float"/>
+							<xs:element name="GoldRaw" type="xs:float"/>
+							<xs:element name="Silver" type="xs:float"/>
+							<xs:element name="SilverRaw" type="xs:float"/>
+							<xs:element name="Stone" type="xs:float"/>
+							<xs:element name="StoneRaw" type="xs:float"/>
+							<xs:element name="Iron" type="xs:float"/>
+							<xs:element name="IronRaw" type="xs:float"/>
+							<xs:element name="Sulfur" type="xs:float"/>
+							<xs:element name="SulfurRaw" type="xs:float"/>
+							<xs:element name="Clay" type="xs:float"/>
+							<xs:element name="ClayRaw" type="xs:float"/>
+							<xs:element name="Wood" type="xs:float"/>
+							<xs:element name="WoodRaw" type="xs:float"/>
+							<xs:element name="WeatherEnergy" type="xs:float"/>
+							<xs:element name="Knowledge" type="xs:float"/>
+							<xs:element name="Faith" type="xs:float"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Conditions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RequiredTecConditions" type="xs:int"/>
+							<xs:element name="TecCondition" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TecType" type="xs:string"/>
+										<xs:element name="TecCategoryType" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="RequiredEntityConditions" type="xs:int"/>
+							<xs:element name="EntityCondition" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="EntityType" type="xs:string"/>
+										<xs:element name="Amount" type="xs:int"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="RequiredEntityCategoryConditions" type="xs:int"/>
+							<xs:element name="EntityCategoryCondition" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="EntityCategoryType" type="xs:string"/>
+										<xs:element name="Amount" type="xs:int"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="RequiredUpgradeCategoryConditions" type="xs:int"/>
+							<xs:element name="UpgradeCategoryCondition" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="UpgradeCategory" type="xs:string"/>
+										<xs:element name="Amount" type="xs:int"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Effects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Script" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ExplorationModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SpeedModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HitpointModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DamageModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DamageBonusModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MaxRangeModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MinRangeModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ArmorModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DodgeModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="GroupLimitModifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:float"/>
+							<xs:element name="Operation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="UseForStatisticsFlag" type="xs:boolean"/>
+			</xs:sequence>
 	</xs:complexType>
 </xs:schema>
