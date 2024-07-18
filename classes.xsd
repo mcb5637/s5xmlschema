@@ -16,6 +16,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerAlarmModeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerAlarmModeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x8076034d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -48,6 +49,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CButtonHelper_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CButtonHelper" use="required"/>
+					<xs:attribute name="classid" fixed="0x813de3b6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -63,6 +65,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEffectRain_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEffectRain" use="required"/>
+					<xs:attribute name="classid" fixed="0x817186ed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -84,6 +87,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CInflictFearAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CInflictFearAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x829758bd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -123,6 +127,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CPureTooltipWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CPureTooltipWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x82cc8876" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -139,6 +144,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEvent2PlayerIDsAndInteger_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEvent2PlayerIDsAndInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0x82dae6f6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -162,6 +168,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerFleeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerFleeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x83a6bcad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -177,6 +184,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSummonedBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSummonedBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x83cafb3d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -194,6 +202,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEvent2Entities_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEvent2Entities" use="required"/>
+					<xs:attribute name="classid" fixed="0x84a88a7d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -217,6 +226,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFoundryBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFoundryBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x852b75d7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -234,6 +244,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CData_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CData" use="required"/>
+					<xs:attribute name="classid" fixed="0x85435e63" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -270,6 +281,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBattleBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x866adb5d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -285,6 +297,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSerfBattleBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSerfBattleBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x86a8aadd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -343,6 +356,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CStaticTextWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CStaticTextWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x86e3bc06" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -358,6 +372,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSoldierPath_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSoldierPath" use="required"/>
+					<xs:attribute name="classid" fixed="0x88b81313" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -409,6 +424,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CFlyingEffect_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CFlyingEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0x8b5120cd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -432,6 +448,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBehaviorCropDoodad_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBehaviorCropDoodad" use="required"/>
+					<xs:attribute name="classid" fixed="0x8bcfe1f7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -450,6 +467,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CHAnimEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CHAnimEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x8d2b3be7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -466,6 +484,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityIDAndInteger_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityIDAndInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0x8d682418" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -484,6 +503,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingMerchantBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingMerchantBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x8d87ccb3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -501,6 +521,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFoundryBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFoundryBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x8eb5dc97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -519,6 +540,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventSendMarker_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventSendMarker" use="required"/>
+					<xs:attribute name="classid" fixed="0x8fdb74e6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -546,6 +568,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CMarketBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CMarketBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x90a53e97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -565,6 +588,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CParamValueSound_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CParamValueSound" use="required"/>
+					<xs:attribute name="classid" fixed="0x90c03583" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -581,6 +605,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLimitedLifespanBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLimitedLifespanBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x9296d76d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -597,6 +622,7 @@
 			<xs:complexContent>
 				<xs:extension base="GDB__CValue_NoClassname">
 					<xs:attribute name="classname" fixed="GDB::CValue" use="required"/>
+					<xs:attribute name="classid" fixed="0x93bcc6f3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -612,6 +638,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CDiplomacyWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CDiplomacyWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x947925c6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -642,6 +669,7 @@
 			<xs:complexContent>
 				<xs:extension base="ERwTools__CCameraSettings_NoClassname">
 					<xs:attribute name="classname" fixed="ERwTools::CCameraSettings" use="required"/>
+					<xs:attribute name="classid" fixed="0x94c55ee4" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -659,6 +687,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityIDAnd2Integer_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityIDAnd2Integer" use="required"/>
+					<xs:attribute name="classid" fixed="0x977a44d6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -683,6 +712,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBehaviorFieldDoodadProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBehaviorFieldDoodadProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x9819cf67" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -699,6 +729,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CReplaceableEntityBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CReplaceableEntityBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x981be357" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -715,6 +746,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventKickUser_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventKickUser" use="required"/>
+					<xs:attribute name="classid" fixed="0x98adbce6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -730,6 +762,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CMiniMapCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CMiniMapCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x98c68876" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -745,6 +778,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CNetworkWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CNetworkWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x9915ce26" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -760,6 +794,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKeepBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKeepBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x995e7af7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -776,6 +811,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsEntityType_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsEntityType" use="required"/>
+					<xs:attribute name="classid" fixed="0x999044ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -934,6 +970,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLogicProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLogicProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x9a702187" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -949,6 +986,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CStatisticsRendererCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CStatisticsRendererCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x9a90fe66" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -992,6 +1030,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceDoodadProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceDoodadProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x9b03a097" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1008,6 +1047,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLTaskArgsTargetType_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLTaskArgsTargetType" use="required"/>
+					<xs:attribute name="classid" fixed="0x9b0b7f68" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1023,6 +1063,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerPath_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerPath" use="required"/>
+					<xs:attribute name="classid" fixed="0x9b502593" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1038,6 +1079,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CDefendableBuildingBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CDefendableBuildingBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x9d1fa07d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1059,6 +1101,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKegBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKegBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x9d419467" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1078,6 +1121,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CFlyingEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CFlyingEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x9d656d6d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1095,6 +1139,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHeroHawkBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHeroHawkBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x9e9325ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1121,6 +1166,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventCannonCreator_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventCannonCreator" use="required"/>
+					<xs:attribute name="classid" fixed="0xa0e8444d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1137,6 +1183,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsFloat_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsFloat" use="required"/>
+					<xs:attribute name="classid" fixed="0xa2787eed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1155,6 +1202,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTorchBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTorchBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xa27e4ff7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1306,6 +1354,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLSettlerProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLSettlerProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xa2a53f58" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1329,6 +1378,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CPath_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CPath" use="required"/>
+					<xs:attribute name="classid" fixed="0xa46a8293" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1355,6 +1405,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBehaviorAnimationEx_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBehaviorAnimationEx" use="required"/>
+					<xs:attribute name="classid" fixed="0xa4947238" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1370,6 +1421,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerBattleBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerBattleBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xa49d7a4d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1386,6 +1438,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEAnimSet_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEAnimSet" use="required"/>
+					<xs:attribute name="classid" fixed="0xa4c5bb88" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1418,6 +1471,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTorchPlacerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTorchPlacerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xa5ab3f17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1436,6 +1490,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskList_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskList" use="required"/>
+					<xs:attribute name="classid" fixed="0xa7170a28" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1454,6 +1509,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventSendUbiComAuthorization_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventSendUbiComAuthorization" use="required"/>
+					<xs:attribute name="classid" fixed="0xa72a0536" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1470,6 +1526,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHeroAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xa7450c5d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1495,6 +1552,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLAnimCategory_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLAnimCategory" use="required"/>
+					<xs:attribute name="classid" fixed="0xa7b5dfb8" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1513,6 +1571,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBarrackBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBarrackBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xa8d28667" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1529,6 +1588,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventPlayerIDAndInteger_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventPlayerIDAndInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0xaa030f86" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1545,6 +1605,7 @@
 			<xs:complexContent>
 				<xs:extension base="GDB__CString_NoClassname">
 					<xs:attribute name="classname" fixed="GDB::CString" use="required"/>
+					<xs:attribute name="classid" fixed="0xaa9646f3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1568,6 +1629,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSerfBattleBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSerfBattleBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xaab009ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1604,6 +1666,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CParticleEffectAttachmentBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CParticleEffectAttachmentBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xaac20eb7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1619,6 +1682,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSettlerMerchantBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSettlerMerchantBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xab50f013" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1643,6 +1707,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CServiceBuildingBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CServiceBuildingBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xaf007567" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1659,6 +1724,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CMineBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CMineBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xafd62c97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1677,6 +1743,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceDoodad_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceDoodad" use="required"/>
+					<xs:attribute name="classid" fixed="0xb0778f47" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1692,6 +1759,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSoldierBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSoldierBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xb1daca7d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1708,6 +1776,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAffectMotivationBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAffectMotivationBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xb31bf57d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1731,6 +1800,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLResourceDoodadBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLResourceDoodadBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xb3c8f597" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1747,6 +1817,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsInteger_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0xb3f8356d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1773,6 +1844,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceRefinerBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceRefinerBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xb4889547" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1796,6 +1868,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFormationBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFormationBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xb55a9de7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1813,6 +1886,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CDefendableBuildingBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CDefendableBuildingBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xb663ea8d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1828,6 +1902,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__C2DArray4Bit_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::C2DArray4Bit" use="required"/>
+					<xs:attribute name="classid" fixed="0xb745cec3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1853,6 +1928,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventUserLeave_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventUserLeave" use="required"/>
+					<xs:attribute name="classid" fixed="0xbae70356" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1869,6 +1945,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCamperBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCamperBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xbb31e947" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1903,6 +1980,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKegPlacerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKegPlacerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xbf115057" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1918,6 +1996,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CStringInputCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CStringInputCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0xbf22e2d6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1934,6 +2013,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsParticleEffectIndex_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsParticleEffectIndex" use="required"/>
+					<xs:attribute name="classid" fixed="0xbfc2ebb7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1962,6 +2042,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CRangedEffectAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CRangedEffectAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xc025b92d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1977,6 +2058,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBehaviorDying_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBehaviorDying" use="required"/>
+					<xs:attribute name="classid" fixed="0xc035c4ed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -1993,6 +2075,7 @@
 			<xs:complexContent>
 				<xs:extension base="ECore__CECoreEventInteger_NoClassname">
 					<xs:attribute name="classname" fixed="ECore::CECoreEventInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0xc35ca433" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2059,6 +2142,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CPlayerFeedbackHandler_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CPlayerFeedbackHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0xc375bea3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2086,6 +2170,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventUserChecksum_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventUserChecksum" use="required"/>
+					<xs:attribute name="classid" fixed="0xc38914b6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2104,6 +2189,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCannonBallEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCannonBallEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xc46e396d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2138,6 +2224,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBattleBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xc4f1c42d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2157,6 +2244,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEntityProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEntityProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xc58bf747" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2173,6 +2261,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLTaskArgsPositionAndTarget_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLTaskArgsPositionAndTarget" use="required"/>
+					<xs:attribute name="classid" fixed="0xc9a11128" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2190,6 +2279,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFormationBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFormationBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xc9c36977" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2214,6 +2304,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHawkBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHawkBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xcb26fc4d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2230,6 +2321,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CLuaFunctionHelper_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CLuaFunctionHelper" use="required"/>
+					<xs:attribute name="classid" fixed="0xcbc5b326" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2257,6 +2349,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSerfBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSerfBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xcc7a655d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2273,6 +2366,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CUpgradeCategory_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CUpgradeCategory" use="required"/>
+					<xs:attribute name="classid" fixed="0xcd0d0ac3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2290,6 +2384,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEAnimCategory_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEAnimCategory" use="required"/>
+					<xs:attribute name="classid" fixed="0xceb17718" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2306,6 +2401,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSniperAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSniperAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0xd167211d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2343,6 +2439,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CFlyingEffectSlot_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CFlyingEffectSlot" use="required"/>
+					<xs:attribute name="classid" fixed="0xd1e5044d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2375,6 +2472,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNeutralBridgeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNeutralBridgeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xd26cd737" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2397,6 +2495,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingMerchantBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingMerchantBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xd3302443" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2414,6 +2513,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventUserConnectUbiComAccount_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventUserConnectUbiComAccount" use="required"/>
+					<xs:attribute name="classid" fixed="0xd388d3e6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2431,6 +2531,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEvent2PlayerIDs_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEvent2PlayerIDs" use="required"/>
+					<xs:attribute name="classid" fixed="0xd39dde58" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2448,6 +2549,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCamouflageBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCamouflageBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xd7898e5d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2467,6 +2569,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConvertSettlerAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConvertSettlerAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xd7f5781d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2483,6 +2586,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CSingleSound_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CSingleSound" use="required"/>
+					<xs:attribute name="classid" fixed="0xd8c12453" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2498,6 +2602,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHeroBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHeroBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xd8c7955d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2559,6 +2664,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNeutralBridgeBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNeutralBridgeBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xd915e0e7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2575,6 +2681,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingTechTraderBehavior__CTechOffer_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingTechTraderBehavior::CTechOffer" use="required"/>
+					<xs:attribute name="classid" fixed="0xd9705e63" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2605,6 +2712,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBehaviorFollow_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBehaviorFollow" use="required"/>
+					<xs:attribute name="classid" fixed="0xdbf96e77" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2633,6 +2741,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xdcdbab9d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2649,6 +2758,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityIDAndPlayerID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityIDAndPlayerID" use="required"/>
+					<xs:attribute name="classid" fixed="0xdd5c5bd7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2664,6 +2774,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CMineBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CMineBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xde005127" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2695,6 +2806,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildBlockProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildBlockProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xde473b17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2715,6 +2827,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCannonBallEffect_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCannonBallEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0xdf09d9fd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2733,6 +2846,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSettlerMerchantBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSettlerMerchantBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xdf6e2bb3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2749,6 +2863,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventEntityIDAndUpgradeCategory_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventEntityIDAndUpgradeCategory" use="required"/>
+					<xs:attribute name="classid" fixed="0xe0855817" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2765,6 +2880,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CAmbientSoundEntity_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CAmbientSoundEntity" use="required"/>
+					<xs:attribute name="classid" fixed="0xe12a3723" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2788,6 +2904,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBehaviorWalkCommand_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBehaviorWalkCommand" use="required"/>
+					<xs:attribute name="classid" fixed="0xe23732c7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2804,6 +2921,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCamouflageBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCamouflageBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xe2d7a5dd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2825,6 +2943,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCircularAttackProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCircularAttackProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xe3fb1c6d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2849,6 +2968,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLimitedAttachmentBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLimitedAttachmentBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xe4461e77" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2864,6 +2984,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__C3DOnScreenInformationCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::C3DOnScreenInformationCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0xe5335726" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2880,6 +3001,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventSendMessage_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventSendMessage" use="required"/>
+					<xs:attribute name="classid" fixed="0xe5d2a656" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2895,6 +3017,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLeaderMovement_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLeaderMovement" use="required"/>
+					<xs:attribute name="classid" fixed="0xe66510c3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2910,6 +3033,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLeaderPath_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLeaderPath" use="required"/>
+					<xs:attribute name="classid" fixed="0xe762ffb3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2934,6 +3058,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAbilityScoutBinocular_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAbilityScoutBinocular" use="required"/>
+					<xs:attribute name="classid" fixed="0xe7661c1d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2951,6 +3076,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConvertSettlerAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConvertSettlerAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0xe8276b7d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2968,6 +3094,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsRandomWaitForAnim_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsRandomWaitForAnim" use="required"/>
+					<xs:attribute name="classid" fixed="0xeaa8fc97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -2996,6 +3123,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTradeManager_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTradeManager" use="required"/>
+					<xs:attribute name="classid" fixed="0xeb6032d7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3022,6 +3150,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CShurikenAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CShurikenAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xec73cadd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3042,6 +3171,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAbilityScoutBinocularProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAbilityScoutBinocularProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xed8ed4bd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3075,6 +3205,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSettler_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSettler" use="required"/>
+					<xs:attribute name="classid" fixed="0xedc11ea8" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3090,6 +3221,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerEvadeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerEvadeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xedd275f3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3105,6 +3237,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CQuestWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CQuestWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0xedf05506" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3137,6 +3270,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CPlayerExplorationHandler_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CPlayerExplorationHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0xee20fa93" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3152,6 +3286,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__C2DArray1Bit_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::C2DArray1Bit" use="required"/>
+					<xs:attribute name="classid" fixed="0xee435293" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3173,6 +3308,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CThiefBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CThiefBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0xf06abab7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3192,6 +3328,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventTransaction_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventTransaction" use="required"/>
+					<xs:attribute name="classid" fixed="0xf18688d7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3208,6 +3345,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityIDAndPlayerIDAndEntityType_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityIDAndPlayerIDAndEntityType" use="required"/>
+					<xs:attribute name="classid" fixed="0xf1b577f8" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3244,6 +3382,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CMaterial_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CMaterial" use="required"/>
+					<xs:attribute name="classid" fixed="0xf1caff46" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3259,6 +3398,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xf3538d37" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3275,6 +3415,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventBuildingCreator_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventBuildingCreator" use="required"/>
+					<xs:attribute name="classid" fixed="0xf446a1a3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3291,6 +3432,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CRangedEffectAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CRangedEffectAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0xf622bc1d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3410,6 +3552,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CEffect_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0xf8536ced" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3426,6 +3569,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsParticleEffectIndexAndType_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsParticleEffectIndexAndType" use="required"/>
+					<xs:attribute name="classid" fixed="0xf92b2027" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3448,6 +3592,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLeaderBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLeaderBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xfa0ac28d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3464,6 +3609,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleSerfBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBattleSerfBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xfa2e053d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3483,6 +3629,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CBuildingEffectsProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CBuildingEffectsProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xfc5b7f67" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3502,6 +3649,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHeroBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHeroBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xfcb04bad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3591,6 +3739,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CButtonWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CButtonWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe028496" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3607,6 +3756,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSerfManager_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSerfManager" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe4c40c3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3623,6 +3773,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CEventValue_int_-27574121__NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CEventValue&amp;lt;int,-27574121&amp;gt;" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe5b4097" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3638,6 +3789,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHeroHawkBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHeroHawkBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe5fcd9d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3654,6 +3806,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBarrackBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBarrackBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe724607" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3671,6 +3824,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConvertBuildingAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConvertBuildingAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xfe86f10d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3687,6 +3841,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CFlyingEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CFlyingEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xfeb81b27" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3703,6 +3858,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConvertBuildingAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConvertBuildingAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0xff68c96d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3718,6 +3874,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CScrollBarButtonCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CScrollBarButtonCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0xff947b86" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3743,6 +3900,7 @@
 			<xs:complexContent>
 				<xs:extension base="CppLogic__EntityAddon__EntityAddonData_NoClassname">
 					<xs:attribute name="classname" fixed="CppLogic::EntityAddon::EntityAddonData" use="required"/>
+					<xs:attribute name="classid" fixed="0x1004" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3759,6 +3917,7 @@
 			<xs:complexContent>
 				<xs:extension base="CppLogic__Mod__FormationSpacedBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="CppLogic::Mod::FormationSpacedBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1009" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3820,6 +3979,7 @@
 			<xs:complexContent>
 				<xs:extension base="CppLogic__Mod__ResourceTrackerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="CppLogic::Mod::ResourceTrackerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x100b" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3843,6 +4003,7 @@
 			<xs:complexContent>
 				<xs:extension base="CppLogic__Mod__Config__DamageClassExt_NoClassname">
 					<xs:attribute name="classname" fixed="CppLogic::Mod::Config::DamageClassExt" use="required"/>
+					<xs:attribute name="classid" fixed="0x100d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3858,6 +4019,7 @@
 			<xs:complexContent>
 				<xs:extension base="CppLogic__Mod__FormationSpacedBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="CppLogic::Mod::FormationSpacedBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1010" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -3874,6 +4036,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventEventTechnologyPlayerIDAndEntityID_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventEventTechnologyPlayerIDAndEntityID" use="required"/>
+					<xs:attribute name="classid" fixed="0x3f0173" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4213,6 +4376,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPlayerStatus_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPlayerStatus" use="required"/>
+					<xs:attribute name="classid" fixed="0x5c6348" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4254,6 +4418,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__GLEBehaviorMultiSubAnims_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::GLEBehaviorMultiSubAnims" use="required"/>
+					<xs:attribute name="classid" fixed="0xfcfc0d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4284,6 +4449,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLimitedAttachmentBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLimitedAttachmentBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x2776847" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4299,6 +4465,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CNotesWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CNotesWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x30118f6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4315,6 +4482,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingMercenaryBehavior__CMercenaryOffer_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingMercenaryBehavior::CMercenaryOffer" use="required"/>
+					<xs:attribute name="classid" fixed="0x339b693" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4332,6 +4500,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEffectFire_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEffectFire" use="required"/>
+					<xs:attribute name="classid" fixed="0x3448bed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4348,6 +4517,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CEntityType_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CEntityType" use="required"/>
+					<xs:attribute name="classid" fixed="0x34aecf3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4367,6 +4537,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSniperAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSniperAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x4be9aed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4382,6 +4553,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCircularAttack_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCircularAttack" use="required"/>
+					<xs:attribute name="classid" fixed="0x522330d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4400,6 +4572,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityAndPos_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityAndPos" use="required"/>
+					<xs:attribute name="classid" fixed="0x573b9a0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4432,6 +4605,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAnimal_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAnimal" use="required"/>
+					<xs:attribute name="classid" fixed="0x5d6b737" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4448,6 +4622,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSentinelBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSentinelBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x5f1ffad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4464,6 +4639,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventTechnologyAndEntityID_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventTechnologyAndEntityID" use="required"/>
+					<xs:attribute name="classid" fixed="0x70df356" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4496,6 +4672,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntityCreator_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEEntityCreator" use="required"/>
+					<xs:attribute name="classid" fixed="0x753286d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4512,6 +4689,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBehaviorPropsDying_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBehaviorPropsDying" use="required"/>
+					<xs:attribute name="classid" fixed="0x7653c1d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4527,6 +4705,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSettlerMovement_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSettlerMovement" use="required"/>
+					<xs:attribute name="classid" fixed="0x786a407" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4550,6 +4729,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CPlayerExplorationUpdate_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CPlayerExplorationUpdate" use="required"/>
+					<xs:attribute name="classid" fixed="0x81e57cd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4569,6 +4749,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLEffectFireProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLEffectFireProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x8ba99d0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4585,6 +4766,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerFleeBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerFleeBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x91415dd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4604,6 +4786,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CGUID_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CGUID" use="required"/>
+					<xs:attribute name="classid" fixed="0xa05fa96" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4620,6 +4803,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventIntegerAndPlayerID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventIntegerAndPlayerID" use="required"/>
+					<xs:attribute name="classid" fixed="0xb365483" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4635,6 +4819,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFoundationBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFoundationBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xb68167d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4660,6 +4845,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGlue__CGlueEntityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGlue::CGlueEntityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0xd397707" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4675,6 +4861,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConstructionSiteBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConstructionSiteBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xe69fe40" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4690,6 +4877,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETerrainLowRes_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETerrainLowRes" use="required"/>
+					<xs:attribute name="classid" fixed="0xe9f4a08" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4722,6 +4910,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPointToResourceBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPointToResourceBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0xec055d7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4738,6 +4927,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLConstructionSiteCreator_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLConstructionSiteCreator" use="required"/>
+					<xs:attribute name="classid" fixed="0xf088740" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4753,6 +4943,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__C2DArray8Bit_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::C2DArray8Bit" use="required"/>
+					<xs:attribute name="classid" fixed="0xf998b0d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4786,6 +4977,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CToolTipHelper_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CToolTipHelper" use="required"/>
+					<xs:attribute name="classid" fixed="0x102e66c6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4825,6 +5017,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingMerchantBehavior__COffer_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingMerchantBehavior::COffer" use="required"/>
+					<xs:attribute name="classid" fixed="0x1079fb13" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4841,6 +5034,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CEffectParticleSystemProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CEffectParticleSystemProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x124acaed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4856,6 +5050,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSettlerUpgradeManager_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSettlerUpgradeManager" use="required"/>
+					<xs:attribute name="classid" fixed="0x126cfe03" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4903,6 +5098,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventGameInformation_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventGameInformation" use="required"/>
+					<xs:attribute name="classid" fixed="0x1283d376" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4919,6 +5115,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSentinelBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSentinelBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x134118ed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4942,6 +5139,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAutoCannonBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAutoCannonBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x143c5efd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4959,6 +5157,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKegBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKegBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x14a85a47" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4976,6 +5175,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CLimitedAttachmentBannerBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CLimitedAttachmentBannerBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x156d5e5d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -4991,6 +5191,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLGoodProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLGoodProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x15c061f0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5009,6 +5210,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSummonBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSummonBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x15c89ffd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5026,6 +5228,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CCamouflageBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CCamouflageBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x15cb25ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5078,6 +5281,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuilding_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuilding" use="required"/>
+					<xs:attribute name="classid" fixed="0x15ebdb60" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5096,6 +5300,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityIDAnd3Integer_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityIDAnd3Integer" use="required"/>
+					<xs:attribute name="classid" fixed="0x17184cf6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5113,6 +5318,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEvadeExecutionBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEvadeExecutionBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1854b733" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5128,6 +5334,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSoldierBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSoldierBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x186da78d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5160,6 +5367,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CBaseWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CBaseWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x18736a06" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5182,6 +5390,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPlayerAttractionProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPlayerAttractionProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x19227118" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5197,6 +5406,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CDisplayGoodProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CDisplayGoodProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x19851470" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5212,6 +5422,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSoldierMovement_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSoldierMovement" use="required"/>
+					<xs:attribute name="classid" fixed="0x19bc8a93" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5232,6 +5443,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSerfBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSerfBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1a1a688d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5261,6 +5473,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CEntityVectorMap_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CEntityVectorMap" use="required"/>
+					<xs:attribute name="classid" fixed="0x1a5477f7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5277,6 +5490,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCamperBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCamperBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1ada8097" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5294,6 +5508,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CSingleStringHandler_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CSingleStringHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0x1b070026" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5311,6 +5526,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1b2e185d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5327,6 +5543,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLTaskArgsGoodType_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLTaskArgsGoodType" use="required"/>
+					<xs:attribute name="classid" fixed="0x1e3b7668" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5348,6 +5565,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1e9edb9d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5364,6 +5582,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1f78996d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5379,6 +5598,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__C3DOnScreenDebugCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::C3DOnScreenDebugCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x20bfe706" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5406,6 +5626,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CDisplayEntityProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CDisplayEntityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x20e25c5d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5448,6 +5669,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CStaticWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CStaticWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x213a8776" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5470,6 +5692,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLAnimalProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLAnimalProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x21487a57" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5487,6 +5710,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPath_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPath" use="required"/>
+					<xs:attribute name="classid" fixed="0x2278d513" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5511,6 +5735,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCampBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCampBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x22b29e27" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5527,6 +5752,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsThousandths_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsThousandths" use="required"/>
+					<xs:attribute name="classid" fixed="0x230862d8" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5546,6 +5772,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CArrowEffect_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CArrowEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0x2320f01d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5634,6 +5861,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntityProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEEntityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x23962d3d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5652,6 +5880,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEvent3Integers_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEvent3Integers" use="required"/>
+					<xs:attribute name="classid" fixed="0x23aa6296" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5669,6 +5898,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsSubAnim_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsSubAnim" use="required"/>
+					<xs:attribute name="classid" fixed="0x23f8242d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5700,6 +5930,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CUVAnimBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CUVAnimBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x2503860d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5726,6 +5957,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCannonBuilderBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCannonBuilderBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x259e7b1d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5742,6 +5974,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CSectorUpdateHandler_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CSectorUpdateHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0x2622aec3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5758,6 +5991,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEffectLightning_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEffectLightning" use="required"/>
+					<xs:attribute name="classid" fixed="0x284c6b9d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5773,6 +6007,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBehaviorAnimalMovement_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBehaviorAnimalMovement" use="required"/>
+					<xs:attribute name="classid" fixed="0x29093b37" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5805,6 +6040,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBombPlacerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBombPlacerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x29af8f97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5821,6 +6057,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x29b5cf4d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5839,6 +6076,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CBuildingBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CBuildingBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x2a2142bd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5854,6 +6092,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSoldierEvadeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSoldierEvadeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x2a8df753" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5871,6 +6110,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CHawkBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CHawkBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x2ad269cd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5895,6 +6135,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLAnimationBehaviorExProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLAnimationBehaviorExProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x2ae74258" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5911,6 +6152,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CConstructionSite_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CConstructionSite" use="required"/>
+					<xs:attribute name="classid" fixed="0x2b5b9c80" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5926,6 +6168,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingMercenaryBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingMercenaryBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x2b61c163" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5941,6 +6184,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSummonBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSummonBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x2ba19f1d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -5985,6 +6229,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CDisplayEffectRainProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CDisplayEffectRainProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x2c96b613" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6003,6 +6248,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsSound_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsSound" use="required"/>
+					<xs:attribute name="classid" fixed="0x2cfedfcd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6019,6 +6265,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTorchBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTorchBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x2edc3c97" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6035,6 +6282,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsPosAndOrientation_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsPosAndOrientation" use="required"/>
+					<xs:attribute name="classid" fixed="0x2f706fdd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6054,6 +6302,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CMovementBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CMovementBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x2fcfda17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6086,6 +6335,7 @@
 			<xs:complexContent>
 				<xs:extension base="GD__CEffectSnowProps_NoClassname">
 					<xs:attribute name="classname" fixed="GD::CEffectSnowProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x3101c3a3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6102,6 +6352,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBarrierBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBarrierBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x310288c7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6127,6 +6378,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventExtractResource_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventExtractResource" use="required"/>
+					<xs:attribute name="classid" fixed="0x315f6eb7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6145,6 +6397,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLEffectLightningProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLEffectLightningProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x322ae630" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6160,6 +6413,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CMotivateWorkersAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CMotivateWorkersAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x33a2fbfd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6176,6 +6430,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CMapProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CMapProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x33ca7b88" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6191,6 +6446,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceRefinerBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceRefinerBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x340c4b57" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6207,6 +6463,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CFontIDHandler_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CFontIDHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0x34d5d406" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6237,6 +6494,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventUserInformation_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventUserInformation" use="required"/>
+					<xs:attribute name="classid" fixed="0x355b0986" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6254,6 +6512,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsUVAnim_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsUVAnim" use="required"/>
+					<xs:attribute name="classid" fixed="0x3631d59d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6269,6 +6528,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBridgeEntity_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBridgeEntity" use="required"/>
+					<xs:attribute name="classid" fixed="0x3736ff8e" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6285,6 +6545,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKeepBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKeepBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x37d0b437" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6303,6 +6564,7 @@
 			<xs:complexContent>
 				<xs:extension base="ED__CWaterfallAnimationBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="ED::CWaterfallAnimationBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x38f70ca3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6319,6 +6581,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CShurikenAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CShurikenAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x3a0d7dad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6473,6 +6736,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBuildingProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBuildingProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x3a4d8b20" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6488,6 +6752,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLeaderEvadeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLeaderEvadeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x3a76e3e3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6513,6 +6778,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityCreator_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityCreator" use="required"/>
+					<xs:attribute name="classid" fixed="0x3adf4f90" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6550,6 +6816,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBehaviorDefaultMovement_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBehaviorDefaultMovement" use="required"/>
+					<xs:attribute name="classid" fixed="0x3b4efd17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6566,6 +6833,7 @@
 			<xs:complexContent>
 				<xs:extension base="Framework__CEventGameSpeed_NoClassname">
 					<xs:attribute name="classname" fixed="Framework::CEventGameSpeed" use="required"/>
+					<xs:attribute name="classid" fixed="0x3c68e6f3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6592,6 +6860,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CNetworkConfigurationData_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CNetworkConfigurationData" use="required"/>
+					<xs:attribute name="classid" fixed="0x3ca8e8d6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6608,6 +6877,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsModelID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsModelID" use="required"/>
+					<xs:attribute name="classid" fixed="0x3d17c8cd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6623,6 +6893,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CStaticCamouflageSlot_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CStaticCamouflageSlot" use="required"/>
+					<xs:attribute name="classid" fixed="0x3e2178ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6651,6 +6922,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CParticleEffectSwitchBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CParticleEffectSwitchBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x3ec808d7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6668,6 +6940,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventPlayerIDGoodTypeAndInteger_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventPlayerIDGoodTypeAndInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0x3eebadf6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6684,6 +6957,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerAlarmModeBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerAlarmModeBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x3f0c405d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6829,6 +7103,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntity_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLEEntity" use="required"/>
+					<xs:attribute name="classid" fixed="0x3f2913e0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6866,6 +7141,7 @@
 			<xs:complexContent>
 				<xs:extension base="EScr__CScriptTriggerSystem_NoClassname">
 					<xs:attribute name="classname" fixed="EScr::CScriptTriggerSystem" use="required"/>
+					<xs:attribute name="classid" fixed="0x3f9b1f03" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6882,6 +7158,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CAbilityType_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CAbilityType" use="required"/>
+					<xs:attribute name="classid" fixed="0x3ff3bac3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6898,6 +7175,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CInflictFearAbility_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CInflictFearAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x400e6c6d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6913,6 +7191,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLPlayerProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLPlayerProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x4193665d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6928,6 +7207,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingTechTraderBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingTechTraderBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x41eeb893" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6943,6 +7223,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceDependentBuildingBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceDependentBuildingBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x4267d337" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6966,6 +7247,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEvadingEntity_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEvadingEntity" use="required"/>
+					<xs:attribute name="classid" fixed="0x42d23a53" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -6982,6 +7264,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CTaskArgsEffectType_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CTaskArgsEffectType" use="required"/>
+					<xs:attribute name="classid" fixed="0x442afa07" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7000,6 +7283,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFoundationBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFoundationBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x449a39ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7016,6 +7300,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CTechnologyType_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CTechnologyType" use="required"/>
+					<xs:attribute name="classid" fixed="0x451b5863" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7032,6 +7317,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__CEvent_NoClassname">
 					<xs:attribute name="classname" fixed="BB::CEvent" use="required"/>
+					<xs:attribute name="classid" fixed="0x472e2780" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7052,6 +7338,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBombBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBombBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x483aea17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7071,6 +7358,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CParamValueExSound_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CParamValueExSound" use="required"/>
+					<xs:attribute name="classid" fixed="0x49c94153" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7091,6 +7379,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CKegPlacerBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CKegPlacerBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x4c080e87" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7109,6 +7398,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CEvadeExecutionBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CEvadeExecutionBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x4c0f7c53" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7126,6 +7416,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventBase_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventBase" use="required"/>
+					<xs:attribute name="classid" fixed="0x4c2f07f6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7149,6 +7440,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsEntityTypeAndPos_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsEntityTypeAndPos" use="required"/>
+					<xs:attribute name="classid" fixed="0x4c44439d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7174,6 +7466,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityAndPosArray_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityAndPosArray" use="required"/>
+					<xs:attribute name="classid" fixed="0x4cd042b7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7191,6 +7484,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTorchPlacerBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTorchPlacerBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x4d4be597" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7214,6 +7508,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerBattleBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerBattleBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x4d7bf2ad" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7232,6 +7527,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsAnimation_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsAnimation" use="required"/>
+					<xs:attribute name="classid" fixed="0x4d90ecb8" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7273,6 +7569,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CWorkerBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CWorkerBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x4e64a87d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7296,6 +7593,7 @@
 			<xs:complexContent>
 				<xs:extension base="GDB__CList_NoClassname">
 					<xs:attribute name="classname" fixed="GDB::CList" use="required"/>
+					<xs:attribute name="classid" fixed="0x5070aac3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7312,6 +7610,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCannonBuilderBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCannonBuilderBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x512f3eed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7328,6 +7627,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CThiefCamouflageBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CThiefCamouflageBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x51d6a267" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7352,6 +7652,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CDamageClassProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CDamageClassProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x520829dd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7371,6 +7672,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAlphaBlendingBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAlphaBlendingBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x5251fc33" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7412,6 +7714,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CWidgetStringHelper_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CWidgetStringHelper" use="required"/>
+					<xs:attribute name="classid" fixed="0x53185d06" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7429,6 +7732,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventPlayerResourceDonation_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventPlayerResourceDonation" use="required"/>
+					<xs:attribute name="classid" fixed="0x531ef206" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7446,6 +7750,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPointToResourceBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPointToResourceBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x55efcd07" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7468,6 +7773,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CContainerWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CContainerWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x55f9d1f6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7518,6 +7824,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CGfxButtonWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CGfxButtonWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x56dda656" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7536,6 +7843,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CGLBehaviorCropDoodadProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CGLBehaviorCropDoodadProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x59979187" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7552,6 +7860,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventPlayerID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventPlayerID" use="required"/>
+					<xs:attribute name="classid" fixed="0x59fa0fb7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7581,6 +7890,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAutoCannonBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAutoCannonBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x5b6bd62d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7597,6 +7907,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CProjectWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CProjectWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x5ca15e96" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7620,6 +7931,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsPosition_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsPosition" use="required"/>
+					<xs:attribute name="classid" fixed="0x5cc25f38" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7636,6 +7948,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CNetEventEntityID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CNetEventEntityID" use="required"/>
+					<xs:attribute name="classid" fixed="0x5d413628" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7652,6 +7965,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CTextButtonWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CTextButtonWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x5dd085a6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7710,6 +8024,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CPlayerAttractionHandler_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CPlayerAttractionHandler" use="required"/>
+					<xs:attribute name="classid" fixed="0x5efac113" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7725,6 +8040,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CUniversityBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CUniversityBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x5f780a67" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7740,6 +8056,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CMiniMapOverlayCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CMiniMapOverlayCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x6157c1ae" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7757,6 +8074,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CAffectMotivationBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CAffectMotivationBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x6280c00d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7773,6 +8091,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsTaskListID_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgsTaskListID" use="required"/>
+					<xs:attribute name="classid" fixed="0x6385ea0d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7789,6 +8108,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CReplaceableEntityBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CReplaceableEntityBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x65e392e7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7805,6 +8125,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLimitedLifespanBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLimitedLifespanBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x66243b3d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7822,6 +8143,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CCampBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CCampBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x671cdce7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7838,6 +8160,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CGoodType_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CGoodType" use="required"/>
+					<xs:attribute name="classid" fixed="0x67c6b5c3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7853,6 +8176,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CVideoPlaybackCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CVideoPlaybackCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x687793a6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7879,6 +8203,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventUserReJoinGame_NoClassname">
 					<xs:attribute name="classname" fixed="ENetworkX::CEventUserReJoinGame" use="required"/>
+					<xs:attribute name="classid" fixed="0x68967286" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7894,6 +8219,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CTradeWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CTradeWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x69246616" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7911,6 +8237,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CArrowEffectProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CArrowEffectProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x696e8eed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7940,6 +8267,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildingUpgradeManager_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBuildingUpgradeManager" use="required"/>
+					<xs:attribute name="classid" fixed="0x6987c1b3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7960,6 +8288,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CMotivateWorkersAbilityProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CMotivateWorkersAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x69bea76d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -7975,6 +8304,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CNetworkInfoCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CNetworkInfoCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x6d7f7f36" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8028,6 +8358,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CLeaderBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CLeaderBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x6dacd5ed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8043,6 +8374,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CSummonedBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CSummonedBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x6e025cdd" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8058,6 +8390,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CShortMessagesWindowControllerCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CShortMessagesWindowControllerCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x6e6ae2c6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8073,6 +8406,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CFarmBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CFarmBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x6ef4a627" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8089,6 +8423,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__CKeyEvent_NoClassname">
 					<xs:attribute name="classname" fixed="BB::CKeyEvent" use="required"/>
+					<xs:attribute name="classid" fixed="0x6fc080e0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8106,6 +8441,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CGuiProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CGuiProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x700839b6" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8122,6 +8458,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__SoundFeedback__CNormalValue_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::SoundFeedback::CNormalValue" use="required"/>
+					<xs:attribute name="classid" fixed="0x70295d23" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8137,6 +8474,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceDoodadBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceDoodadBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x707cd967" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8162,6 +8500,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CProgressBarWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CProgressBarWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x72633416" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8179,6 +8518,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleSerfBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBattleSerfBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x738d051d" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8202,6 +8542,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CResourceDependentBuildingBehaviorProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CResourceDependentBuildingBehaviorProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x73be4b47" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8227,6 +8568,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CTreeBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CTreeBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x74ca1ca7" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8242,6 +8584,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETerrainHiRes_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETerrainHiRes" use="required"/>
+					<xs:attribute name="classid" fixed="0x7559fb37" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8266,6 +8609,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="EGUIX::CCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x7656db56" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8282,6 +8626,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBombBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBombBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x76ae8807" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8323,6 +8668,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBridgeProperties_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CBridgeProperties" use="required"/>
+					<xs:attribute name="classid" fixed="0x7706b02e" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8379,6 +8725,7 @@
 			<xs:complexContent>
 				<xs:extension base="EScr__CScriptTrigger_NoClassname">
 					<xs:attribute name="classname" fixed="EScr::CScriptTrigger" use="required"/>
+					<xs:attribute name="classid" fixed="0x772113a3" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8395,6 +8742,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CNetEventEntityIDPlayerIDAndInteger_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CNetEventEntityIDPlayerIDAndInteger" use="required"/>
+					<xs:attribute name="classid" fixed="0x7766fa33" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8412,6 +8760,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__CKeyPressEvent_NoClassname">
 					<xs:attribute name="classname" fixed="BB::CKeyPressEvent" use="required"/>
+					<xs:attribute name="classid" fixed="0x77699ae0" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8438,6 +8787,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CMovingEntity_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CMovingEntity" use="required"/>
+					<xs:attribute name="classid" fixed="0x77d4e427" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8456,6 +8806,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CThiefBehavior_NoClassname">
 					<xs:attribute name="classname" fixed="GGL::CThiefBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x7ae64e17" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8476,6 +8827,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__CMouseEvent_NoClassname">
 					<xs:attribute name="classname" fixed="BB::CMouseEvent" use="required"/>
+					<xs:attribute name="classid" fixed="0x7b2e4d60" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8492,6 +8844,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CAnimationBehaviorProps_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CAnimationBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x7b4a2bed" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8508,6 +8861,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgs_NoClassname">
 					<xs:attribute name="classname" fixed="EGL::CGLETaskArgs" use="required"/>
+					<xs:attribute name="classid" fixed="0x7ce66308" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8523,6 +8877,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__CQuestWindowQuestOutputCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::CQuestWindowQuestOutputCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x7e0b4136" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8538,6 +8893,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGUI__C3DViewCustomWidget_NoClassname">
 					<xs:attribute name="classname" fixed="GGUI::C3DViewCustomWidget" use="required"/>
+					<xs:attribute name="classid" fixed="0x7fa7db06" use="optional"/>
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
@@ -8705,6 +9061,51 @@
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="UseForStatisticsFlag" type="xs:boolean"/>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ED__CModelsProps__ModelData">
+			<xs:sequence>
+				<xs:element name="CastShadow" type="xs:boolean"/>
+				<xs:element name="DoNotDestroyHierarchy" type="xs:boolean"/>
+				<xs:element name="Effect" type="xs:string"/>
+				<xs:element name="HasUVAnim" type="xs:boolean"/>
+				<xs:element name="OcclusionCaster" type="xs:boolean"/>
+				<xs:element name="OcclusionReceiver" type="xs:boolean"/>
+				<xs:element name="OnePassAlphaBlendingDistance" type="xs:float"/>
+				<xs:element name="OrnamentalItemEffect" type="xs:string"/>
+				<xs:element name="OrnamentalItem" type="xs:boolean"/>
+				<xs:element name="SelectionOffsetX" type="xs:float"/>
+				<xs:element name="SelectionOffsetY" type="xs:float"/>
+				<xs:element name="SelectionRadius" type="xs:float"/>
+				<xs:element name="SelectionTexture" type="xs:string"/>
+				<xs:element name="ShareShadowRaster" type="xs:boolean"/>
+				<xs:element name="TwoPassAlphaBlending" type="xs:boolean"/>
+				<xs:element name="AlphaBlendHighQualityOnly" type="xs:boolean"/>
+				<xs:element name="UseAlphaBlending" type="xs:boolean"/>
+				<xs:element name="UseSurfaceHeight" type="xs:boolean"/>
+				<xs:element name="TerrainLightColorPortion" type="xs:float"/>
+				<xs:element name="TerrainVertexColorPortion" type="xs:float"/>
+				<xs:element name="DefaultAnimID" type="xs:string"/>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GGL__ExperienceClass">
+			<xs:sequence>
+				<xs:element name="Table" type="xs:string"/>
+				<xs:element name="Level" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DamageAmount" type="xs:float"/>
+							<xs:element name="HealingPoints" type="xs:float"/>
+							<xs:element name="DodgeChance" type="xs:float"/>
+							<xs:element name="AutoAttackRange" type="xs:float"/>
+							<xs:element name="MaxRange" type="xs:float"/>
+							<xs:element name="Speed" type="xs:float"/>
+							<xs:element name="Exploration" type="xs:float"/>
+							<xs:element name="MissChance" type="xs:float"/>
+							<xs:element name="DamageBonus" type="xs:float"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 	</xs:complexType>
 </xs:schema>

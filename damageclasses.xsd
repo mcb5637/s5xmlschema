@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:include schemaLocation="classes.xsd"/>
+	<xs:element name="root" type="DCList"/>
+	<xs:complexType name="DCWithId">
+		<xs:sequence>
+			<xs:element name="Logic" type="GGL__CDamageClassProps"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:int" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="DCList">
+		<xs:sequence>
+			<xs:element name="DamageClass" minOccurs="0" maxOccurs="unbounded" type="DCWithId"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
