@@ -9108,4 +9108,201 @@
 				</xs:element>
 			</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="ED__CDisplayProps">
+			<xs:sequence>
+				<xs:element name="ShadowBlur" type="xs:boolean"/>
+				<xs:element name="ShadowRasterSize" type="xs:unsignedInt"/>
+				<xs:element name="ShadowStrength" type="xs:float"/>
+				<xs:element name="InvalidPositionColorModulate">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="R" type="xs:unsignedByte"/>
+							<xs:element name="G" type="xs:unsignedByte"/>
+							<xs:element name="B" type="xs:unsignedByte"/>
+							<xs:element name="A" type="xs:unsignedByte"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="InvalidPositionColorEmissive">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="R" type="xs:unsignedByte"/>
+							<xs:element name="G" type="xs:unsignedByte"/>
+							<xs:element name="B" type="xs:unsignedByte"/>
+							<xs:element name="A" type="xs:unsignedByte"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PlayerColor" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="R" type="xs:unsignedByte"/>
+							<xs:element name="G" type="xs:unsignedByte"/>
+							<xs:element name="B" type="xs:unsignedByte"/>
+							<xs:element name="A" type="xs:unsignedByte"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MiniMapColor" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="R" type="xs:unsignedByte"/>
+							<xs:element name="G" type="xs:unsignedByte"/>
+							<xs:element name="B" type="xs:unsignedByte"/>
+							<xs:element name="A" type="xs:unsignedByte"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SelectionRadiusScaleForModelsWithDecal" type="xs:float"/>
+				<xs:element name="FogOfWarNeverSeenLuminance" type="xs:int"/>
+				<xs:element name="FogOfWarSeenLuminance" type="xs:int"/>
+				<xs:element name="ShadowRasterSize" type="xs:unsignedInt"/>
+				<xs:element name="AuraRadius" type="xs:float"/>
+				<xs:element name="AuraHeight" type="xs:float"/>
+				<xs:element name="AuraTexture" type="xs:string"/>
+				<xs:element name="CommandAcknowledgementModel" type="xs:string"/>
+				<xs:element name="CommandAcknowledgementDuration" type="xs:float"/>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GGlue__CTerrainPropsMgr">
+			<xs:sequence>
+				<xs:element name="Logic">
+					<xs:complexType>
+						<xs:sequence>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Display">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransitionTexture" type="xs:string"/>
+							<xs:element name="SnowTransitionTexture" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TerrainType" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logic">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Blocked" type="xs:boolean"/>
+										<xs:element name="BuildBlocked" type="xs:boolean"/>
+										<xs:element name="WalkModifier" type="xs:float"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Display">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Priority" type="xs:int"/>
+										<xs:element name="BaseTexture" type="xs:string"/>
+										<xs:element name="TransitionsTexture" type="xs:string"/>
+										<xs:element name="SnowTexture" type="xs:string"/>
+										<xs:element name="TransitionsColorModulate" type="xs:boolean"/>
+										<xs:element name="Quads" type="xs:int"/>
+										<xs:element name="Color">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="R" type="xs:unsignedByte"/>
+													<xs:element name="G" type="xs:unsignedByte"/>
+													<xs:element name="B" type="xs:unsignedByte"/>
+													<xs:element name="A" type="xs:unsignedByte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ReplacementTerrainType" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GGlue__CGlueWaterPropsMgr">
+			<xs:sequence>
+				<xs:element name="Logic">
+					<xs:complexType>
+						<xs:sequence>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Display">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ReflectionRasterSize" type="xs:unsignedInt"/>
+							<xs:element name="WaterFlowSpeed" type="xs:float"/>
+							<xs:element name="WaterBumpTexName" type="xs:string"/>
+							<xs:element name="WaterBumpTexNum" type="xs:int"/>
+							<xs:element name="WaterAnimDuration" type="xs:float"/>
+							<xs:element name="SkyTexName" type="xs:string"/>
+							<xs:element name="ShoreWaveKeyFrame" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Pos" type="xs:float"/>
+										<xs:element name="Alpha" type="xs:float"/>
+										<xs:element name="Scale" type="xs:float"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ShoreWave" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ShoreWaveTexName" type="xs:string"/>
+										<xs:element name="ShoreWaveAnimDuration" type="xs:float"/>
+										<xs:element name="ShoreWaveKeyFrame" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Pos" type="xs:float"/>
+													<xs:element name="Alpha" type="xs:float"/>
+													<xs:element name="Scale" type="xs:float"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logic">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Freezes" type="xs:boolean"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Display">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Color">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Blue" type="xs:unsignedByte"/>
+													<xs:element name="Green" type="xs:unsignedByte"/>
+													<xs:element name="Red" type="xs:unsignedByte"/>
+													<xs:element name="Alpha" type="xs:unsignedByte"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="TransparencyFactor" type="xs:float"/>
+										<xs:element name="TransparencyOffset" type="xs:float"/>
+										<xs:element name="TransparencyMin" type="xs:float"/>
+										<xs:element name="TransparencyMax" type="xs:float"/>
+										<xs:element name="DrawShoreWave" type="xs:boolean"/>
+										<xs:element name="Freezes" type="xs:boolean"/>
+										<xs:element name="IceBaseTexture" type="xs:string"/>
+										<xs:element name="IceDetailTexture" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+	</xs:complexType>
 </xs:schema>
