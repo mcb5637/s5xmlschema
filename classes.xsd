@@ -26,21 +26,8 @@
 					<xs:sequence>
 						<xs:element name="DisabledFlag" type="xs:boolean"/>
 						<xs:element name="HighLightedFlag" type="xs:boolean"/>
-						<xs:element name="ActionFunction">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="LuaCommand" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="ShortCutString">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="StringTableKey" type="xs:string"/>
-									<xs:element name="RawString" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ActionFunction" type="EGUIX__CLuaFunctionHelper"/>
+						<xs:element name="ShortCutString" type="EGUIX__CSingleStringHandler"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -95,30 +82,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CBaseWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="ToolTipHelper">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="ToolTipEnabledFlag" type="xs:boolean"/>
-									<xs:element name="ToolTipString">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="StringTableKey" type="xs:string"/>
-												<xs:element name="RawString" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="TargetWidget" type="xs:string"/>
-									<xs:element name="ControlTargetWidgetDisplayState" type="xs:boolean"/>
-									<xs:element name="UpdateFunction">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="LuaCommand" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ToolTipHelper" type="EGUIX__CToolTipHelper"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -305,45 +269,8 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CStaticWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="StringHelper">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Font">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="FontName" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="String">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="StringTableKey" type="xs:string"/>
-												<xs:element name="RawString" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="StringFrameDistance" type="xs:float"/>
-									<xs:element name="Color">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Red" type="xs:int"/>
-												<xs:element name="Green" type="xs:int"/>
-												<xs:element name="Blue" type="xs:int"/>
-												<xs:element name="Alpha" type="xs:int"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="UpdateFunction">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="LuaCommand" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StringHelper" type="EGUIX__CWidgetStringHelper"/>
+						<xs:element name="UpdateFunction" type="EGUIX__CLuaFunctionHelper"/>
 						<xs:element name="UpdateManualFlag" type="xs:boolean"/>
 						<xs:element name="FirstLineToPrint" type="xs:int"/>
 						<xs:element name="NumberOfLinesToPrint" type="xs:int"/>
@@ -380,34 +307,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CEffect_NoClassname">
 					<xs:sequence>
-						<xs:element name="FlyingEffectSlot">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="StartTurn" type="xs:int"/>
-									<xs:element name="a" type="xs:float"/>
-									<xs:element name="b" type="xs:float"/>
-									<xs:element name="c" type="xs:float"/>
-									<xs:element name="Position">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="StartPosition">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Orientation" type="xs:float"/>
-									<xs:element name="Speed" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="FlyingEffectSlot" type="EGL__CFlyingEffectSlot"/>
 						<xs:element name="TargetPosition">
 							<xs:complexType>
 								<xs:sequence>
@@ -1386,16 +1286,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="AnimToRestore">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="TaskType" type="xs:string"/>
-									<xs:element name="AnimID" type="xs:string"/>
-									<xs:element name="Category" type="xs:string"/>
-									<xs:element name="PlayBackwards" type="xs:boolean"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="AnimToRestore" type="EGL__CGLETaskArgsAnimation"/>
 						<xs:element name="AnimSet" type="xs:string"/>
 					</xs:sequence>
 				</xs:extension>
@@ -1910,16 +1801,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventBase_NoClassname">
 					<xs:sequence>
-						<xs:element name="UserGUID">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Value1" type="xs:int"/>
-									<xs:element name="Value2" type="xs:int"/>
-									<xs:element name="Value3" type="xs:int"/>
-									<xs:element name="Value4" type="xs:int"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UserGUID" type="ENetworkX__CGUID"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -2152,16 +2034,7 @@
 					<xs:sequence>
 						<xs:element name="NetTick" type="xs:int"/>
 						<xs:element name="GameChecksum" type="xs:int"/>
-						<xs:element name="UserGUID">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Value1" type="xs:int"/>
-									<xs:element name="Value2" type="xs:int"/>
-									<xs:element name="Value3" type="xs:int"/>
-									<xs:element name="Value4" type="xs:int"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UserGUID" type="ENetworkX__CGUID"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -3657,80 +3530,9 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CBaseWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="ButtonHelper">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="DisabledFlag" type="xs:boolean"/>
-									<xs:element name="HighLightedFlag" type="xs:boolean"/>
-									<xs:element name="ActionFunction">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="LuaCommand" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="ShortCutString">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="StringTableKey" type="xs:string"/>
-												<xs:element name="RawString" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="Materials" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Texture" type="xs:string"/>
-									<xs:element name="TextureCoordinates">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-												<xs:element name="W" type="xs:float"/>
-												<xs:element name="H" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Color">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Red" type="xs:int"/>
-												<xs:element name="Green" type="xs:int"/>
-												<xs:element name="Blue" type="xs:int"/>
-												<xs:element name="Alpha" type="xs:int"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="ToolTipHelper">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="ToolTipEnabledFlag" type="xs:boolean"/>
-									<xs:element name="ToolTipString">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="StringTableKey" type="xs:string"/>
-												<xs:element name="RawString" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="TargetWidget" type="xs:string"/>
-									<xs:element name="ControlTargetWidgetDisplayState" type="xs:boolean"/>
-									<xs:element name="UpdateFunction">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="LuaCommand" type="xs:string"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ButtonHelper" type="EGUIX__CButtonHelper"/>
+						<xs:element name="Materials" minOccurs="0" maxOccurs="unbounded" type="EGUIX__CMaterial"/>
+						<xs:element name="ToolTipHelper" type="EGUIX__CToolTipHelper"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -4952,23 +4754,10 @@
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
 						<xs:element name="ToolTipEnabledFlag" type="xs:boolean"/>
-						<xs:element name="ToolTipString">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="StringTableKey" type="xs:string"/>
-									<xs:element name="RawString" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ToolTipString" type="EGUIX__CSingleStringHandler"/>
 						<xs:element name="TargetWidget" type="xs:string"/>
 						<xs:element name="ControlTargetWidgetDisplayState" type="xs:boolean"/>
-						<xs:element name="UpdateFunction">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="LuaCommand" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UpdateFunction" type="EGUIX__CLuaFunctionHelper"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -5074,16 +4863,7 @@
 									<xs:element name="NetworkAddress" type="xs:int"/>
 									<xs:element name="UserName" type="xs:string"/>
 									<xs:element name="UbiComAccountName" type="xs:string"/>
-									<xs:element name="UserGUID">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Value1" type="xs:int"/>
-												<xs:element name="Value2" type="xs:int"/>
-												<xs:element name="Value3" type="xs:int"/>
-												<xs:element name="Value4" type="xs:int"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="UserGUID" type="ENetworkX__CGUID"/>
 									<xs:element name="PlayerColor" type="xs:int"/>
 									<xs:element name="TeamID" type="xs:int"/>
 									<xs:element name="PlayerWillNotReconnectFlag" type="xs:boolean"/>
@@ -5634,33 +5414,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CBaseWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="BackgroundMaterial">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Texture" type="xs:string"/>
-									<xs:element name="TextureCoordinates">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-												<xs:element name="W" type="xs:float"/>
-												<xs:element name="H" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Color">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Red" type="xs:int"/>
-												<xs:element name="Green" type="xs:int"/>
-												<xs:element name="Blue" type="xs:int"/>
-												<xs:element name="Alpha" type="xs:int"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="BackgroundMaterial" type="EGUIX__CMaterial"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -6473,16 +6227,7 @@
 					<xs:sequence>
 						<xs:element name="UserName" type="xs:string"/>
 						<xs:element name="UbiComUserName" type="xs:string"/>
-						<xs:element name="UserGUID">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Value1" type="xs:int"/>
-									<xs:element name="Value2" type="xs:int"/>
-									<xs:element name="Value3" type="xs:int"/>
-									<xs:element name="Value4" type="xs:int"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UserGUID" type="ENetworkX__CGUID"/>
 						<xs:element name="ApplicationVersionID" type="xs:int"/>
 						<xs:element name="StaticDataChecksum" type="xs:int"/>
 						<xs:element name="InternetConnection" type="xs:int"/>
@@ -7680,21 +7425,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="Font">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="FontName" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="String">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="StringTableKey" type="xs:string"/>
-									<xs:element name="RawString" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Font" type="EGUIX__CFontIDHandler"/>
+						<xs:element name="String" type="EGUIX__CSingleStringHandler"/>
 						<xs:element name="StringFrameDistance" type="xs:float"/>
 						<xs:element name="Color">
 							<xs:complexType>
@@ -7781,40 +7513,8 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CButtonWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="IconMaterial">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Texture" type="xs:string"/>
-									<xs:element name="TextureCoordinates">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-												<xs:element name="W" type="xs:float"/>
-												<xs:element name="H" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Color">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Red" type="xs:int"/>
-												<xs:element name="Green" type="xs:int"/>
-												<xs:element name="Blue" type="xs:int"/>
-												<xs:element name="Alpha" type="xs:int"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="UpdateFunction">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="LuaCommand" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="IconMaterial" type="EGUIX__CMaterial"/>
+						<xs:element name="UpdateFunction" type="EGUIX__CLuaFunctionHelper"/>
 						<xs:element name="UpdateManualFlag" type="xs:boolean"/>
 					</xs:sequence>
 				</xs:extension>
@@ -8184,16 +7884,7 @@
 			<xs:complexContent>
 				<xs:extension base="ENetworkX__CEventBase_NoClassname">
 					<xs:sequence>
-						<xs:element name="UserGUID">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Value1" type="xs:int"/>
-									<xs:element name="Value2" type="xs:int"/>
-									<xs:element name="Value3" type="xs:int"/>
-									<xs:element name="Value4" type="xs:int"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UserGUID" type="ENetworkX__CGUID"/>
 						<xs:element name="CurrentNetTick" type="xs:int"/>
 					</xs:sequence>
 				</xs:extension>
@@ -8482,13 +8173,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGUIX__CStaticWidget_NoClassname">
 					<xs:sequence>
-						<xs:element name="UpdateFunction">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="LuaCommand" type="xs:string"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="UpdateFunction" type="EGUIX__CLuaFunctionHelper"/>
 						<xs:element name="UpdateManualFlag" type="xs:boolean"/>
 						<xs:element name="ProgressBarValue" type="xs:float"/>
 						<xs:element name="ProgressBarLimit" type="xs:float"/>
@@ -9164,6 +8849,77 @@
 				<xs:element name="CommandAcknowledgementDuration" type="xs:float"/>
 			</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="GGlue__TerrainTypeData">
+			<xs:sequence>
+				<xs:element name="Logic">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Blocked" type="xs:boolean"/>
+							<xs:element name="BuildBlocked" type="xs:boolean"/>
+							<xs:element name="WalkModifier" type="xs:float"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Display">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Priority" type="xs:int"/>
+							<xs:element name="BaseTexture" type="xs:string"/>
+							<xs:element name="TransitionsTexture" type="xs:string"/>
+							<xs:element name="SnowTexture" type="xs:string"/>
+							<xs:element name="TransitionsColorModulate" type="xs:boolean"/>
+							<xs:element name="Quads" type="xs:int"/>
+							<xs:element name="Color">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="R" type="xs:unsignedByte"/>
+										<xs:element name="G" type="xs:unsignedByte"/>
+										<xs:element name="B" type="xs:unsignedByte"/>
+										<xs:element name="A" type="xs:unsignedByte"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ReplacementTerrainType" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GGlue__WaterTypeData">
+			<xs:sequence>
+				<xs:element name="Logic">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Freezes" type="xs:boolean"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Display">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Color">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Blue" type="xs:unsignedByte"/>
+										<xs:element name="Green" type="xs:unsignedByte"/>
+										<xs:element name="Red" type="xs:unsignedByte"/>
+										<xs:element name="Alpha" type="xs:unsignedByte"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TransparencyFactor" type="xs:float"/>
+							<xs:element name="TransparencyOffset" type="xs:float"/>
+							<xs:element name="TransparencyMin" type="xs:float"/>
+							<xs:element name="TransparencyMax" type="xs:float"/>
+							<xs:element name="DrawShoreWave" type="xs:boolean"/>
+							<xs:element name="Freezes" type="xs:boolean"/>
+							<xs:element name="IceBaseTexture" type="xs:string"/>
+							<xs:element name="IceDetailTexture" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="GGlue__CTerrainPropsMgr">
 			<xs:sequence>
 				<xs:element name="Logic">
@@ -9180,44 +8936,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="TerrainType" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Logic">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Blocked" type="xs:boolean"/>
-										<xs:element name="BuildBlocked" type="xs:boolean"/>
-										<xs:element name="WalkModifier" type="xs:float"/>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							<xs:element name="Display">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Priority" type="xs:int"/>
-										<xs:element name="BaseTexture" type="xs:string"/>
-										<xs:element name="TransitionsTexture" type="xs:string"/>
-										<xs:element name="SnowTexture" type="xs:string"/>
-										<xs:element name="TransitionsColorModulate" type="xs:boolean"/>
-										<xs:element name="Quads" type="xs:int"/>
-										<xs:element name="Color">
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="R" type="xs:unsignedByte"/>
-													<xs:element name="G" type="xs:unsignedByte"/>
-													<xs:element name="B" type="xs:unsignedByte"/>
-													<xs:element name="A" type="xs:unsignedByte"/>
-												</xs:sequence>
-											</xs:complexType>
-										</xs:element>
-										<xs:element name="ReplacementTerrainType" type="xs:string"/>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="TerrainType" minOccurs="0" maxOccurs="unbounded" type="GGlue__TerrainTypeData"/>
 			</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GGlue__CGlueWaterPropsMgr">
@@ -9266,43 +8985,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Logic">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Freezes" type="xs:boolean"/>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							<xs:element name="Display">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Color">
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="Blue" type="xs:unsignedByte"/>
-													<xs:element name="Green" type="xs:unsignedByte"/>
-													<xs:element name="Red" type="xs:unsignedByte"/>
-													<xs:element name="Alpha" type="xs:unsignedByte"/>
-												</xs:sequence>
-											</xs:complexType>
-										</xs:element>
-										<xs:element name="TransparencyFactor" type="xs:float"/>
-										<xs:element name="TransparencyOffset" type="xs:float"/>
-										<xs:element name="TransparencyMin" type="xs:float"/>
-										<xs:element name="TransparencyMax" type="xs:float"/>
-										<xs:element name="DrawShoreWave" type="xs:boolean"/>
-										<xs:element name="Freezes" type="xs:boolean"/>
-										<xs:element name="IceBaseTexture" type="xs:string"/>
-										<xs:element name="IceDetailTexture" type="xs:string"/>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded" type="GGlue__WaterTypeData"/>
 			</xs:sequence>
 	</xs:complexType>
 </xs:schema>
