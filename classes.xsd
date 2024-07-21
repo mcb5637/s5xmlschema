@@ -1110,8 +1110,8 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntityProps_NoClassname">
 					<xs:sequence>
-						<xs:element name="HeadSet"/>
-						<xs:element name="Hat"/>
+						<xs:element name="HeadSet" minOccurs="0"/>
+						<xs:element name="Hat" minOccurs="0"/>
 						<xs:element name="Cost">
 							<xs:complexType>
 								<xs:sequence>
@@ -5536,7 +5536,7 @@
 					<xs:sequence>
 						<xs:element name="Class" type="xs:string"/>
 						<xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-						<xs:element name="ApproachPos">
+						<xs:element name="ApproachPos" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="X" type="xs:float"/>
@@ -5544,55 +5544,59 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ApproachR" type="xs:float"/>
-						<xs:element name="Blocked1">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="Blocked2">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="BlockingArea" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Blocked1">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Blocked2">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="NumBlockedPoints" type="xs:int"/>
-						<xs:element name="SnapTolerance" type="xs:float"/>
+						<xs:element name="ApproachR" type="xs:float" minOccurs="0"/>
+						<xs:choice minOccurs="0">
+							<xs:sequence>
+								<xs:element name="Blocked1">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="X" type="xs:float"/>
+											<xs:element name="Y" type="xs:float"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Blocked2">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="X" type="xs:float"/>
+											<xs:element name="Y" type="xs:float"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:element name="BlockingArea" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Blocked1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="X" type="xs:float"/>
+													<xs:element name="Y" type="xs:float"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Blocked2">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="X" type="xs:float"/>
+													<xs:element name="Y" type="xs:float"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="NumBlockedPoints" type="xs:int"/>
+						</xs:choice>
+						<xs:element name="SnapTolerance" type="xs:float" minOccurs="0"/>
 						<xs:element name="CanFloat" type="xs:boolean"/>
 						<xs:element name="CanDrown" type="xs:boolean"/>
 						<xs:element name="MapFileDontSave" type="xs:boolean"/>
-						<xs:element name="Race" type="xs:string"/>
+						<xs:element name="Race" type="xs:string" minOccurs="0"/>
 						<xs:element name="NeedsPlayer" type="xs:boolean"/>
 						<xs:element name="ForceNoPlayer" type="xs:boolean"/>
 						<xs:element name="MaxHealth" type="xs:int"/>
-						<xs:element name="Models">
+						<xs:element name="Models" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Model" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
@@ -5602,7 +5606,7 @@
 						<xs:element name="AdjustWalkAnimSpeed" type="xs:boolean"/>
 						<xs:element name="Exploration" type="xs:float"/>
 						<xs:element name="ExperiencePoints" type="xs:int"/>
-						<xs:element name="Visible" type="xs:boolean"/>
+						<xs:element name="Visible" type="xs:boolean" minOccurs="0"/>
 						<xs:element name="AccessCategory" type="xs:string"/>
 						<xs:element name="DoNotExecute" type="xs:boolean"/>
 						<xs:element name="DeleteWhenBuiltOn" type="xs:boolean"/>
@@ -8936,7 +8940,16 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="TerrainType" minOccurs="0" maxOccurs="unbounded" type="GGlue__TerrainTypeData"/>
+				<xs:element name="TerrainType" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="GGlue__TerrainTypeData">
+								<xs:attribute name="id" type="xs:string" use="required"/>
+								<xs:attribute name="value" type="xs:int" use="optional"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="GGlue__CGlueWaterPropsMgr">
@@ -8980,12 +8993,23 @@
 											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
+									<xs:attribute name="id" type="xs:string" use="required"/>
+									<xs:attribute name="value" type="xs:int" use="optional"/>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded" type="GGlue__WaterTypeData"/>
+				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="GGlue__WaterTypeData">
+								<xs:attribute name="id" type="xs:string" use="required"/>
+								<xs:attribute name="value" type="xs:int" use="optional"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 	</xs:complexType>
 </xs:schema>
