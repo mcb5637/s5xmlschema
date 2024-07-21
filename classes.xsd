@@ -221,11 +221,11 @@
 						<xs:element name="DamageClass" type="xs:string"/>
 						<xs:element name="DamageAmount" type="xs:int"/>
 						<xs:element name="MaxRandomDamageBonus" type="xs:int"/>
-						<xs:element name="DamageRange" type="xs:float"/>
-						<xs:element name="ProjectileEffectID" type="xs:string"/>
-						<xs:element name="ProjectileOffsetFront" type="xs:float"/>
-						<xs:element name="ProjectileOffsetRight" type="xs:float"/>
-						<xs:element name="ProjectileOffsetHeight" type="xs:float"/>
+						<xs:element name="DamageRange" type="xs:float" minOccurs="0"/>
+						<xs:element name="ProjectileEffectID" type="xs:string" minOccurs="0"/>
+						<xs:element name="ProjectileOffsetFront" type="xs:float" minOccurs="0"/>
+						<xs:element name="ProjectileOffsetRight" type="xs:float" minOccurs="0"/>
+						<xs:element name="ProjectileOffsetHeight" type="xs:float" minOccurs="0"/>
 						<xs:element name="BattleWaitUntil" type="xs:int"/>
 						<xs:element name="MissChance" type="xs:int"/>
 						<xs:element name="MaxRange" type="xs:float"/>
@@ -1049,13 +1049,13 @@
 						<xs:element name="HeadSet" minOccurs="0"/>
 						<xs:element name="Hat" minOccurs="0"/>
 						<xs:element name="Cost" type="shok__CostInfo"/>
-						<xs:element name="BuildFactor" type="xs:float"/>
-						<xs:element name="RepairFactor" type="xs:float"/>
+						<xs:element name="BuildFactor" type="xs:float" minOccurs="0"/>
+						<xs:element name="RepairFactor" type="xs:float" minOccurs="0"/>
 						<xs:element name="ArmorClass" type="xs:string"/>
 						<xs:element name="ArmorAmount" type="xs:int"/>
 						<xs:element name="DodgeChance" type="xs:int"/>
 						<xs:element name="IdleTaskList" type="xs:string"/>
-						<xs:element name="Upgrade">
+						<xs:element name="Upgrade" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Time" type="xs:float"/>
@@ -1065,70 +1065,70 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyExploration">
+						<xs:element name="ModifyExploration" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyHitpoints">
+						<xs:element name="ModifyHitpoints" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifySpeed">
+						<xs:element name="ModifySpeed" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyDamage">
+						<xs:element name="ModifyDamage" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyArmor">
+						<xs:element name="ModifyArmor" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyDodge">
+						<xs:element name="ModifyDodge" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyMaxRange">
+						<xs:element name="ModifyMaxRange" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyMinRange">
+						<xs:element name="ModifyMinRange" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyDamageBonus">
+						<xs:element name="ModifyDamageBonus" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyGroupLimit">
+						<xs:element name="ModifyGroupLimit" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
@@ -3195,8 +3195,8 @@
 				<xs:extension base="GGL__CBattleBehaviorProps_NoClassname">
 					<xs:sequence>
 						<xs:element name="SoldierType" type="xs:string"/>
-						<xs:element name="BarrackUpgradeCategory" type="xs:string"/>
-						<xs:element name="HomeRadius" type="xs:float"/>
+						<xs:element name="BarrackUpgradeCategory" type="xs:string" minOccurs="0"/>
+						<xs:element name="HomeRadius" type="xs:float" minOccurs="0"/>
 						<xs:element name="HealingPoints" type="xs:int"/>
 						<xs:element name="HealingSeconds" type="xs:int"/>
 						<xs:element name="AutoAttackRange" type="xs:float"/>
@@ -4264,13 +4264,13 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="Logic" type="BB__IObject_NoClassname"/>
-						<xs:element name="Display" type="BB__IObject_NoClassname"/>
+						<xs:element name="Logic" type="EGL__CGLEEntityProps_NoClassname"/>
+						<xs:element name="Display" type="ED__CDisplayEntityProps_NoClassname"/>
 						<xs:element name="Behavior" minOccurs="0" maxOccurs="unbounded">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Logic" type="BB__IObject_NoClassname"/>
-									<xs:element name="Display" type="BB__IObject_NoClassname"/>
+									<xs:element name="Logic" type="EGL__CGLEBehaviorProps_NoClassname" minOccurs="0"/>
+									<xs:element name="Display" type="ED__CBehaviorProps_NoClassname" minOccurs="0"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
@@ -4973,9 +4973,9 @@
 					<xs:sequence>
 						<xs:element name="Class" type="xs:string"/>
 						<xs:element name="Model" type="xs:string"/>
-						<xs:element name="Model2" type="xs:string"/>
-						<xs:element name="Model3" type="xs:string"/>
-						<xs:element name="Model4" type="xs:string"/>
+						<xs:element name="Model2" type="xs:string" minOccurs="0"/>
+						<xs:element name="Model3" type="xs:string" minOccurs="0"/>
+						<xs:element name="Model4" type="xs:string" minOccurs="0"/>
 						<xs:element name="DrawPlayerColor" type="xs:boolean"/>
 						<xs:element name="CastShadow" type="xs:boolean"/>
 						<xs:element name="RenderInFoW" type="xs:boolean"/>
@@ -7953,23 +7953,23 @@
 	</xs:complexType>
 	<xs:complexType name="shok__CostInfo">
 			<xs:sequence>
-				<xs:element name="Gold" type="xs:float"/>
-				<xs:element name="GoldRaw" type="xs:float"/>
-				<xs:element name="Silver" type="xs:float"/>
-				<xs:element name="SilverRaw" type="xs:float"/>
-				<xs:element name="Stone" type="xs:float"/>
-				<xs:element name="StoneRaw" type="xs:float"/>
-				<xs:element name="Iron" type="xs:float"/>
-				<xs:element name="IronRaw" type="xs:float"/>
-				<xs:element name="Sulfur" type="xs:float"/>
-				<xs:element name="SulfurRaw" type="xs:float"/>
-				<xs:element name="Clay" type="xs:float"/>
-				<xs:element name="ClayRaw" type="xs:float"/>
-				<xs:element name="Wood" type="xs:float"/>
-				<xs:element name="WoodRaw" type="xs:float"/>
-				<xs:element name="WeatherEnergy" type="xs:float"/>
-				<xs:element name="Knowledge" type="xs:float"/>
-				<xs:element name="Faith" type="xs:float"/>
+				<xs:element name="Gold" type="xs:float" minOccurs="0"/>
+				<xs:element name="GoldRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Silver" type="xs:float" minOccurs="0"/>
+				<xs:element name="SilverRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Stone" type="xs:float" minOccurs="0"/>
+				<xs:element name="StoneRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Iron" type="xs:float" minOccurs="0"/>
+				<xs:element name="IronRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Sulfur" type="xs:float" minOccurs="0"/>
+				<xs:element name="SulfurRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Clay" type="xs:float" minOccurs="0"/>
+				<xs:element name="ClayRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="Wood" type="xs:float" minOccurs="0"/>
+				<xs:element name="WoodRaw" type="xs:float" minOccurs="0"/>
+				<xs:element name="WeatherEnergy" type="xs:float" minOccurs="0"/>
+				<xs:element name="Knowledge" type="xs:float" minOccurs="0"/>
+				<xs:element name="Faith" type="xs:float" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="EGL__EffectsProps__EffectData">
