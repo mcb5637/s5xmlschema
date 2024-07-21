@@ -116,14 +116,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="FlightPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="FlightPosition" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -308,14 +301,7 @@
 				<xs:extension base="EGL__CEffect_NoClassname">
 					<xs:sequence>
 						<xs:element name="FlyingEffectSlot" type="EGL__CFlyingEffectSlot"/>
-						<xs:element name="TargetPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TargetPosition" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -782,29 +768,7 @@
 						<xs:element name="TaxAmount" type="xs:int"/>
 						<xs:element name="TaxPenalty" type="xs:float"/>
 						<xs:element name="InitialTaxLevel" type="xs:int"/>
-						<xs:element name="BlessingCost">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="BlessingCost" type="shok__CostInfo"/>
 						<xs:element name="BlessingBonus" type="xs:float"/>
 						<xs:element name="ForceToWorkPenalty" type="xs:int"/>
 						<xs:element name="ResourceDoodadWarnAmount" type="xs:int"/>
@@ -894,31 +858,10 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBuildBlockProperties_NoClassname">
 					<xs:sequence>
-						<xs:element name="Center">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Center" type="shok__Position"/>
 						<xs:element name="Radius" type="xs:float"/>
-						<xs:element name="LineStart">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="LineEnd">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="LineStart" type="shok__Position"/>
+						<xs:element name="LineEnd" type="shok__Position"/>
 						<xs:element name="ExtractTaskList" type="xs:string"/>
 						<xs:element name="Model1" type="xs:string"/>
 						<xs:element name="Model2" type="xs:string"/>
@@ -1049,14 +992,7 @@
 					<xs:sequence>
 						<xs:element name="FoundationType" type="xs:string"/>
 						<xs:element name="CannonType" type="xs:string"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="Orientation" type="xs:float"/>
 					</xs:sequence>
 				</xs:extension>
@@ -1112,29 +1048,7 @@
 					<xs:sequence>
 						<xs:element name="HeadSet" minOccurs="0"/>
 						<xs:element name="Hat" minOccurs="0"/>
-						<xs:element name="Cost">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Cost" type="shok__CostInfo"/>
 						<xs:element name="BuildFactor" type="xs:float"/>
 						<xs:element name="RepairFactor" type="xs:float"/>
 						<xs:element name="ArmorClass" type="xs:string"/>
@@ -1145,29 +1059,7 @@
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Time" type="xs:float"/>
-									<xs:element name="Cost">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Gold" type="xs:float"/>
-												<xs:element name="GoldRaw" type="xs:float"/>
-												<xs:element name="Silver" type="xs:float"/>
-												<xs:element name="SilverRaw" type="xs:float"/>
-												<xs:element name="Stone" type="xs:float"/>
-												<xs:element name="StoneRaw" type="xs:float"/>
-												<xs:element name="Iron" type="xs:float"/>
-												<xs:element name="IronRaw" type="xs:float"/>
-												<xs:element name="Sulfur" type="xs:float"/>
-												<xs:element name="SulfurRaw" type="xs:float"/>
-												<xs:element name="Clay" type="xs:float"/>
-												<xs:element name="ClayRaw" type="xs:float"/>
-												<xs:element name="Wood" type="xs:float"/>
-												<xs:element name="WoodRaw" type="xs:float"/>
-												<xs:element name="WeatherEnergy" type="xs:float"/>
-												<xs:element name="Knowledge" type="xs:float"/>
-												<xs:element name="Faith" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="Cost" type="shok__CostInfo"/>
 									<xs:element name="Type" type="xs:string"/>
 									<xs:element name="Category" type="xs:string"/>
 								</xs:sequence>
@@ -1262,14 +1154,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="WayPoints" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="WayPoints" minOccurs="0" maxOccurs="unbounded" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -1337,22 +1222,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="StartPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="TargetPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StartPosition" type="shok__Position"/>
+						<xs:element name="TargetPosition" type="shok__Position"/>
 						<xs:element name="PlacedTorch" type="xs:boolean"/>
 					</xs:sequence>
 				</xs:extension>
@@ -1504,14 +1375,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleBehavior_NoClassname">
 					<xs:sequence>
-						<xs:element name="TerritoryCenter">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TerritoryCenter" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -1835,22 +1699,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="StartPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="TargetPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StartPosition" type="shok__Position"/>
+						<xs:element name="TargetPosition" type="shok__Position"/>
 						<xs:element name="PlacedKeg" type="xs:boolean"/>
 						<xs:element name="TurnsUntilArmed" type="xs:unsignedInt"/>
 						<xs:element name="TurnsUntilDisarmed" type="xs:unsignedInt"/>
@@ -2004,14 +1854,7 @@
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="GoodType" type="xs:string"/>
-									<xs:element name="MapPosition">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="MapPosition" type="shok__Position"/>
 									<xs:element name="GameTurn" type="xs:int"/>
 								</xs:sequence>
 							</xs:complexType>
@@ -2076,14 +1919,7 @@
 						<xs:element name="NoMoveNecessary" type="xs:boolean"/>
 						<xs:element name="NormalRangeCheckNecessary" type="xs:boolean"/>
 						<xs:element name="Command" type="xs:int"/>
-						<xs:element name="AttackMoveTarget">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="AttackMoveTarget" type="shok__Position"/>
 						<xs:element name="Helping" type="xs:boolean"/>
 						<xs:element name="MilliSecondsToWait" type="xs:int"/>
 						<xs:element name="MSToPlayHitAnimation" type="xs:int"/>
@@ -2160,14 +1996,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="ExplorePosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ExplorePosition" type="shok__Position"/>
 						<xs:element name="CreationTurn" type="xs:int"/>
 					</xs:sequence>
 				</xs:extension>
@@ -2286,22 +2115,8 @@
 						<xs:element name="a" type="xs:float"/>
 						<xs:element name="b" type="xs:float"/>
 						<xs:element name="c" type="xs:float"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="StartPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
+						<xs:element name="StartPosition" type="shok__Position"/>
 						<xs:element name="Orientation" type="xs:float"/>
 						<xs:element name="Speed" type="xs:float"/>
 					</xs:sequence>
@@ -2489,42 +2304,13 @@
 									<xs:element name="BuilderSlot" minOccurs="0" maxOccurs="unbounded">
 										<xs:complexType>
 											<xs:sequence>
-												<xs:element name="Position">
-													<xs:complexType>
-														<xs:sequence>
-															<xs:element name="X" type="xs:float"/>
-															<xs:element name="Y" type="xs:float"/>
-														</xs:sequence>
-													</xs:complexType>
-												</xs:element>
+												<xs:element name="Position" type="shok__Position"/>
 												<xs:element name="Orientation"/>
 											</xs:sequence>
 										</xs:complexType>
 									</xs:element>
 									<xs:element name="Time" type="xs:int"/>
-									<xs:element name="Cost">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Gold" type="xs:float"/>
-												<xs:element name="GoldRaw" type="xs:float"/>
-												<xs:element name="Silver" type="xs:float"/>
-												<xs:element name="SilverRaw" type="xs:float"/>
-												<xs:element name="Stone" type="xs:float"/>
-												<xs:element name="StoneRaw" type="xs:float"/>
-												<xs:element name="Iron" type="xs:float"/>
-												<xs:element name="IronRaw" type="xs:float"/>
-												<xs:element name="Sulfur" type="xs:float"/>
-												<xs:element name="SulfurRaw" type="xs:float"/>
-												<xs:element name="Clay" type="xs:float"/>
-												<xs:element name="ClayRaw" type="xs:float"/>
-												<xs:element name="Wood" type="xs:float"/>
-												<xs:element name="WoodRaw" type="xs:float"/>
-												<xs:element name="WeatherEnergy" type="xs:float"/>
-												<xs:element name="Knowledge" type="xs:float"/>
-												<xs:element name="Faith" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="Cost" type="shok__CostInfo"/>
 									<xs:element name="ConstructionSite" type="xs:string"/>
 								</xs:sequence>
 							</xs:complexType>
@@ -2566,14 +2352,7 @@
 						<xs:element name="FailureDistance" type="xs:float"/>
 						<xs:element name="TimeOutTime" type="xs:int"/>
 						<xs:element name="StartTurn" type="xs:int"/>
-						<xs:element name="Target">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Target" type="shok__Position"/>
 						<xs:element name="StartFollowing" type="xs:boolean"/>
 						<xs:element name="StopFollowing" type="xs:boolean"/>
 						<xs:element name="FollowStatus" type="xs:int"/>
@@ -2655,22 +2434,8 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntityProps_NoClassname">
 					<xs:sequence>
-						<xs:element name="TerrainPos1">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="TerrainPos2">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TerrainPos1" type="shok__Position"/>
+						<xs:element name="TerrainPos2" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -2761,14 +2526,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="WalkTarget">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="WalkTarget" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -2915,14 +2673,7 @@
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
 						<xs:element name="Active" type="xs:boolean"/>
-						<xs:element name="ExlorationPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ExlorationPosition" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -3404,14 +3155,7 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="StartTurn" type="xs:int"/>
 						<xs:element name="Duration" type="xs:int"/>
 						<xs:element name="EffectType" type="xs:string"/>
@@ -3727,52 +3471,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="Produced">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="Used">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Produced" type="shok__CostInfo"/>
+						<xs:element name="Used" type="shok__CostInfo"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -3849,29 +3549,7 @@
 						<xs:element name="PlayerID" type="xs:int"/>
 						<xs:element name="PlayerNameStringTableKey" type="xs:string"/>
 						<xs:element name="PlayerNameStringRaw" type="xs:string"/>
-						<xs:element name="Resources">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Resources" type="shok__CostInfo"/>
 						<xs:element name="TaxAmountFactor" type="xs:float"/>
 						<xs:element name="TaxLevel" type="xs:int"/>
 						<xs:element name="CurrentMaxMotivation" type="xs:float"/>
@@ -3894,29 +3572,7 @@
 										<xs:complexType>
 											<xs:sequence>
 												<xs:element name="UniqueTributeID" type="xs:int"/>
-												<xs:element name="Costs">
-													<xs:complexType>
-														<xs:sequence>
-															<xs:element name="Gold" type="xs:float"/>
-															<xs:element name="GoldRaw" type="xs:float"/>
-															<xs:element name="Silver" type="xs:float"/>
-															<xs:element name="SilverRaw" type="xs:float"/>
-															<xs:element name="Stone" type="xs:float"/>
-															<xs:element name="StoneRaw" type="xs:float"/>
-															<xs:element name="Iron" type="xs:float"/>
-															<xs:element name="IronRaw" type="xs:float"/>
-															<xs:element name="Sulfur" type="xs:float"/>
-															<xs:element name="SulfurRaw" type="xs:float"/>
-															<xs:element name="Clay" type="xs:float"/>
-															<xs:element name="ClayRaw" type="xs:float"/>
-															<xs:element name="Wood" type="xs:float"/>
-															<xs:element name="WoodRaw" type="xs:float"/>
-															<xs:element name="WeatherEnergy" type="xs:float"/>
-															<xs:element name="Knowledge" type="xs:float"/>
-															<xs:element name="Faith" type="xs:float"/>
-														</xs:sequence>
-													</xs:complexType>
-												</xs:element>
+												<xs:element name="Costs" type="shok__CostInfo"/>
 												<xs:element name="OwnerEntityID" type="xs:int"/>
 												<xs:element name="OfferingPlayerID" type="xs:int"/>
 												<xs:element name="OfferStringTableKey" type="xs:string"/>
@@ -4382,23 +4038,9 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CMovingEntity_NoClassname">
 					<xs:sequence>
-						<xs:element name="TerritoryCenter">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TerritoryCenter" type="shok__Position"/>
 						<xs:element name="TerritoryRadius" type="xs:float"/>
-						<xs:element name="DangerPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="DangerPosition" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -4450,14 +4092,7 @@
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
 						<xs:element name="Type" type="xs:string"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="Orientation"/>
 						<xs:element name="Flags" type="xs:int"/>
 						<xs:element name="PlayerID" type="xs:int"/>
@@ -4687,22 +4322,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="StartPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="TargetPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StartPosition" type="shok__Position"/>
+						<xs:element name="TargetPosition" type="shok__Position"/>
 						<xs:element name="PlacedTorch" type="xs:boolean"/>
 					</xs:sequence>
 				</xs:extension>
@@ -4774,29 +4395,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="Price">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Gold" type="xs:float"/>
-									<xs:element name="GoldRaw" type="xs:float"/>
-									<xs:element name="Silver" type="xs:float"/>
-									<xs:element name="SilverRaw" type="xs:float"/>
-									<xs:element name="Stone" type="xs:float"/>
-									<xs:element name="StoneRaw" type="xs:float"/>
-									<xs:element name="Iron" type="xs:float"/>
-									<xs:element name="IronRaw" type="xs:float"/>
-									<xs:element name="Sulfur" type="xs:float"/>
-									<xs:element name="SulfurRaw" type="xs:float"/>
-									<xs:element name="Clay" type="xs:float"/>
-									<xs:element name="ClayRaw" type="xs:float"/>
-									<xs:element name="Wood" type="xs:float"/>
-									<xs:element name="WoodRaw" type="xs:float"/>
-									<xs:element name="WeatherEnergy" type="xs:float"/>
-									<xs:element name="Knowledge" type="xs:float"/>
-									<xs:element name="Faith" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Price" type="shok__CostInfo"/>
 						<xs:element name="Amount" type="xs:int"/>
 					</xs:sequence>
 				</xs:extension>
@@ -5016,22 +4615,8 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntity_NoClassname">
 					<xs:sequence>
-						<xs:element name="ApproachPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="LeavePosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ApproachPosition" type="shok__Position"/>
+						<xs:element name="LeavePosition" type="shok__Position"/>
 						<xs:element name="IsActive" type="xs:boolean"/>
 						<xs:element name="IsRegistered" type="xs:boolean"/>
 						<xs:element name="IsBeingUpgraded" type="xs:boolean"/>
@@ -5472,14 +5057,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEBehaviorProps_NoClassname">
 					<xs:sequence>
-						<xs:element name="Slot" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Slot" minOccurs="0" maxOccurs="unbounded" type="shok__Position"/>
 						<xs:element name="RemoveDelay" type="xs:float"/>
 					</xs:sequence>
 				</xs:extension>
@@ -5536,53 +5114,18 @@
 					<xs:sequence>
 						<xs:element name="Class" type="xs:string"/>
 						<xs:element name="Category" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-						<xs:element name="ApproachPos" minOccurs="0">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ApproachPos" type="shok__Position" minOccurs="0"/>
 						<xs:element name="ApproachR" type="xs:float" minOccurs="0"/>
 						<xs:choice minOccurs="0">
 							<xs:sequence>
-								<xs:element name="Blocked1">
-									<xs:complexType>
-										<xs:sequence>
-											<xs:element name="X" type="xs:float"/>
-											<xs:element name="Y" type="xs:float"/>
-										</xs:sequence>
-									</xs:complexType>
-								</xs:element>
-								<xs:element name="Blocked2">
-									<xs:complexType>
-										<xs:sequence>
-											<xs:element name="X" type="xs:float"/>
-											<xs:element name="Y" type="xs:float"/>
-										</xs:sequence>
-									</xs:complexType>
-								</xs:element>
+								<xs:element name="Blocked1" type="shok__Position"/>
+								<xs:element name="Blocked2" type="shok__Position"/>
 							</xs:sequence>
 							<xs:element name="BlockingArea" minOccurs="0" maxOccurs="unbounded">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Blocked1">
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="X" type="xs:float"/>
-													<xs:element name="Y" type="xs:float"/>
-												</xs:sequence>
-											</xs:complexType>
-										</xs:element>
-										<xs:element name="Blocked2">
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="X" type="xs:float"/>
-													<xs:element name="Y" type="xs:float"/>
-												</xs:sequence>
-											</xs:complexType>
-										</xs:element>
+										<xs:element name="Blocked1" type="shok__Position"/>
+										<xs:element name="Blocked2" type="shok__Position"/>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -5696,14 +5239,7 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="CannonPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="CannonPosition" type="shok__Position"/>
 						<xs:element name="CannonType" type="xs:string"/>
 						<xs:element name="FoundationType" type="xs:string"/>
 						<xs:element name="Active" type="xs:boolean"/>
@@ -5773,22 +5309,8 @@
 			<xs:complexContent>
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
-						<xs:element name="StartPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="TargetPosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StartPosition" type="shok__Position"/>
+						<xs:element name="TargetPosition" type="shok__Position"/>
 						<xs:element name="PlacedBomb" type="xs:boolean"/>
 					</xs:sequence>
 				</xs:extension>
@@ -6120,14 +5642,7 @@
 					<xs:sequence>
 						<xs:element name="SerfID" type="xs:int"/>
 						<xs:element name="ResourceType" type="xs:string"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -6341,22 +5856,8 @@
 						<xs:element name="MaxWorkers" type="xs:int"/>
 						<xs:element name="InitialMaxWorkers" type="xs:int"/>
 						<xs:element name="NumberOfAttractableSettlers" type="xs:int"/>
-						<xs:element name="DoorPos">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="LeavePos">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="DoorPos" type="shok__Position"/>
+						<xs:element name="LeavePos" type="shok__Position"/>
 						<xs:element name="Worker" type="xs:string"/>
 						<xs:element name="ConstructionInfo">
 							<xs:complexType>
@@ -6364,42 +5865,13 @@
 									<xs:element name="BuilderSlot" minOccurs="0" maxOccurs="unbounded">
 										<xs:complexType>
 											<xs:sequence>
-												<xs:element name="Position">
-													<xs:complexType>
-														<xs:sequence>
-															<xs:element name="X" type="xs:float"/>
-															<xs:element name="Y" type="xs:float"/>
-														</xs:sequence>
-													</xs:complexType>
-												</xs:element>
+												<xs:element name="Position" type="shok__Position"/>
 												<xs:element name="Orientation"/>
 											</xs:sequence>
 										</xs:complexType>
 									</xs:element>
 									<xs:element name="Time" type="xs:int"/>
-									<xs:element name="Cost">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Gold" type="xs:float"/>
-												<xs:element name="GoldRaw" type="xs:float"/>
-												<xs:element name="Silver" type="xs:float"/>
-												<xs:element name="SilverRaw" type="xs:float"/>
-												<xs:element name="Stone" type="xs:float"/>
-												<xs:element name="StoneRaw" type="xs:float"/>
-												<xs:element name="Iron" type="xs:float"/>
-												<xs:element name="IronRaw" type="xs:float"/>
-												<xs:element name="Sulfur" type="xs:float"/>
-												<xs:element name="SulfurRaw" type="xs:float"/>
-												<xs:element name="Clay" type="xs:float"/>
-												<xs:element name="ClayRaw" type="xs:float"/>
-												<xs:element name="Wood" type="xs:float"/>
-												<xs:element name="WoodRaw" type="xs:float"/>
-												<xs:element name="WeatherEnergy" type="xs:float"/>
-												<xs:element name="Knowledge" type="xs:float"/>
-												<xs:element name="Faith" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="Cost" type="shok__CostInfo"/>
 									<xs:element name="ConstructionSite" type="xs:string"/>
 								</xs:sequence>
 							</xs:complexType>
@@ -6412,29 +5884,7 @@
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Time" type="xs:float"/>
-									<xs:element name="Cost">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="Gold" type="xs:float"/>
-												<xs:element name="GoldRaw" type="xs:float"/>
-												<xs:element name="Silver" type="xs:float"/>
-												<xs:element name="SilverRaw" type="xs:float"/>
-												<xs:element name="Stone" type="xs:float"/>
-												<xs:element name="StoneRaw" type="xs:float"/>
-												<xs:element name="Iron" type="xs:float"/>
-												<xs:element name="IronRaw" type="xs:float"/>
-												<xs:element name="Sulfur" type="xs:float"/>
-												<xs:element name="SulfurRaw" type="xs:float"/>
-												<xs:element name="Clay" type="xs:float"/>
-												<xs:element name="ClayRaw" type="xs:float"/>
-												<xs:element name="Wood" type="xs:float"/>
-												<xs:element name="WoodRaw" type="xs:float"/>
-												<xs:element name="WeatherEnergy" type="xs:float"/>
-												<xs:element name="Knowledge" type="xs:float"/>
-												<xs:element name="Faith" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="Cost" type="shok__CostInfo"/>
 									<xs:element name="Type" type="xs:string"/>
 									<xs:element name="Category" type="xs:string"/>
 								</xs:sequence>
@@ -6510,14 +5960,7 @@
 				<xs:extension base="EGL__CNetEventPlayerID_NoClassname">
 					<xs:sequence>
 						<xs:element name="EntityType" type="xs:string"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="Orientation" type="xs:float"/>
 					</xs:sequence>
 				</xs:extension>
@@ -6808,14 +6251,7 @@
 						<xs:element name="CurrentTaskListID" type="xs:string"/>
 						<xs:element name="CurrentTaskIndex" type="xs:unsignedInt"/>
 						<xs:element name="SetNewTaskListDepth" type="xs:int"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="Orientation" type="xs:float"/>
 						<xs:element name="Scale" type="xs:float"/>
 						<xs:element name="IsOnWater" type="xs:boolean"/>
@@ -7173,14 +6609,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgsEntityType_NoClassname">
 					<xs:sequence>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -7198,14 +6627,7 @@
 				<xs:extension base="BB__CEvent_NoClassname">
 					<xs:sequence>
 						<xs:element name="EntityID" type="xs:int"/>
-						<xs:element name="Position" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" minOccurs="0" maxOccurs="unbounded" type="shok__Position"/>
 						<xs:element name="Orientation" type="xs:float"/>
 					</xs:sequence>
 				</xs:extension>
@@ -7241,14 +6663,7 @@
 			<xs:complexContent>
 				<xs:extension base="GGL__CBattleBehavior_NoClassname">
 					<xs:sequence>
-						<xs:element name="TerritoryCenter">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TerritoryCenter" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -7619,14 +7034,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLETaskArgs_NoClassname">
 					<xs:sequence>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -8009,24 +7417,10 @@
 					<xs:sequence>
 						<xs:element name="GroupHealth" type="xs:int"/>
 						<xs:element name="HealthPerSoldier" type="xs:int"/>
-						<xs:element name="TerritoryCenter">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TerritoryCenter" type="shok__Position"/>
 						<xs:element name="TerritoryRadius" type="xs:float"/>
 						<xs:element name="ExperiencePoints" type="xs:int"/>
-						<xs:element name="PatrolPoints" minOccurs="0" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="PatrolPoints" minOccurs="0" maxOccurs="unbounded" type="shok__Position"/>
 						<xs:element name="NextPatrolPointIndex" type="xs:int"/>
 						<xs:element name="PatrolIndexCountingDown" type="xs:boolean"/>
 						<xs:element name="TrainingStartTurn" type="xs:int"/>
@@ -8036,14 +7430,7 @@
 						<xs:element name="SecondsSinceHealthPointRefresh" type="xs:int"/>
 						<xs:element name="NudgeCount" type="xs:int"/>
 						<xs:element name="FormationType" type="xs:int"/>
-						<xs:element name="StartBattlePosition">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="StartBattlePosition" type="shok__Position"/>
 						<xs:element name="IndexOfFirstChaoticPosition" type="xs:unsignedInt"/>
 					</xs:sequence>
 				</xs:extension>
@@ -8240,14 +7627,7 @@
 				<xs:extension base="BB__IObject_NoClassname">
 					<xs:sequence>
 						<xs:element name="OriginalEntityType" type="xs:string"/>
-						<xs:element name="Position">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Position" type="shok__Position"/>
 						<xs:element name="Orientation"/>
 					</xs:sequence>
 				</xs:extension>
@@ -8327,22 +7707,8 @@
 						<xs:element name="BridgeArea" minOccurs="0" maxOccurs="unbounded">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Blocked1">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="Blocked2">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="X" type="xs:float"/>
-												<xs:element name="Y" type="xs:float"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
+									<xs:element name="Blocked1" type="shok__Position"/>
+									<xs:element name="Blocked2" type="shok__Position"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
@@ -8457,14 +7823,7 @@
 			<xs:complexContent>
 				<xs:extension base="EGL__CGLEEntity_NoClassname">
 					<xs:sequence>
-						<xs:element name="TargetPos">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="X" type="xs:float"/>
-									<xs:element name="Y" type="xs:float"/>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="TargetPos" type="shok__Position"/>
 						<xs:element name="TargetOrientationValid" type="xs:boolean"/>
 						<xs:element name="TargetOrientation" type="xs:float"/>
 						<xs:element name="MovementState" type="xs:int"/>
@@ -8586,6 +7945,33 @@
 				</xs:extension>
 			</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="shok__Position">
+			<xs:sequence>
+				<xs:element name="X" type="xs:float"/>
+				<xs:element name="Y" type="xs:float"/>
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="shok__CostInfo">
+			<xs:sequence>
+				<xs:element name="Gold" type="xs:float"/>
+				<xs:element name="GoldRaw" type="xs:float"/>
+				<xs:element name="Silver" type="xs:float"/>
+				<xs:element name="SilverRaw" type="xs:float"/>
+				<xs:element name="Stone" type="xs:float"/>
+				<xs:element name="StoneRaw" type="xs:float"/>
+				<xs:element name="Iron" type="xs:float"/>
+				<xs:element name="IronRaw" type="xs:float"/>
+				<xs:element name="Sulfur" type="xs:float"/>
+				<xs:element name="SulfurRaw" type="xs:float"/>
+				<xs:element name="Clay" type="xs:float"/>
+				<xs:element name="ClayRaw" type="xs:float"/>
+				<xs:element name="Wood" type="xs:float"/>
+				<xs:element name="WoodRaw" type="xs:float"/>
+				<xs:element name="WeatherEnergy" type="xs:float"/>
+				<xs:element name="Knowledge" type="xs:float"/>
+				<xs:element name="Faith" type="xs:float"/>
+			</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="EGL__EffectsProps__EffectData">
 			<xs:sequence>
 				<xs:element name="Logic" type="BB__IObject_NoClassname"/>
@@ -8597,29 +7983,7 @@
 				<xs:element name="TecCategoryType" type="xs:string"/>
 				<xs:element name="TimeToResearch" type="xs:float"/>
 				<xs:element name="AutomaticResearch" type="xs:boolean"/>
-				<xs:element name="ResourceCosts">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Gold" type="xs:float"/>
-							<xs:element name="GoldRaw" type="xs:float"/>
-							<xs:element name="Silver" type="xs:float"/>
-							<xs:element name="SilverRaw" type="xs:float"/>
-							<xs:element name="Stone" type="xs:float"/>
-							<xs:element name="StoneRaw" type="xs:float"/>
-							<xs:element name="Iron" type="xs:float"/>
-							<xs:element name="IronRaw" type="xs:float"/>
-							<xs:element name="Sulfur" type="xs:float"/>
-							<xs:element name="SulfurRaw" type="xs:float"/>
-							<xs:element name="Clay" type="xs:float"/>
-							<xs:element name="ClayRaw" type="xs:float"/>
-							<xs:element name="Wood" type="xs:float"/>
-							<xs:element name="WoodRaw" type="xs:float"/>
-							<xs:element name="WeatherEnergy" type="xs:float"/>
-							<xs:element name="Knowledge" type="xs:float"/>
-							<xs:element name="Faith" type="xs:float"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="ResourceCosts" type="shok__CostInfo"/>
 				<xs:element name="Conditions">
 					<xs:complexType>
 						<xs:sequence>
