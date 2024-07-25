@@ -8352,4 +8352,17 @@
 				<xs:element name="WaterType" minOccurs="0" maxOccurs="unbounded" type="GGlue__WaterTypeData"/>
 			</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="CppLogic__ModLoader__ModpackDesc">
+			<xs:sequence>
+				<xs:element name="LoaderPath" type="xs:string"/>
+				<xs:element name="ScriptPath" type="xs:string"/>
+				<xs:element name="Required" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Incompatible" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Override" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="DataMod" type="xs:boolean"/>
+				<xs:element name="ScriptMod" type="xs:boolean"/>
+				<xs:element name="MainmenuMod" type="xs:boolean"/>
+				<xs:element name="KeepArchive" type="xs:boolean"/>
+			</xs:sequence>
+	</xs:complexType>
 </xs:schema>
