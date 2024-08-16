@@ -5855,10 +5855,10 @@
 					<xs:sequence>
 						<xs:element name="MaxWorkers" type="xs:int"/>
 						<xs:element name="InitialMaxWorkers" type="xs:int"/>
-						<xs:element name="NumberOfAttractableSettlers" type="xs:int"/>
-						<xs:element name="DoorPos" type="shok__Position"/>
-						<xs:element name="LeavePos" type="shok__Position"/>
-						<xs:element name="Worker" type="xs:string"/>
+						<xs:element name="NumberOfAttractableSettlers" type="xs:int" minOccurs="0"/>
+						<xs:element name="DoorPos" type="shok__Position" minOccurs="0"/>
+						<xs:element name="LeavePos" type="shok__Position" minOccurs="0"/>
+						<xs:element name="Worker" type="xs:string" minOccurs="0"/>
 						<xs:element name="ConstructionInfo">
 							<xs:complexType>
 								<xs:sequence>
@@ -5877,10 +5877,10 @@
 							</xs:complexType>
 						</xs:element>
 						<xs:element name="BuildOn" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-						<xs:element name="HideBase" type="xs:boolean"/>
+						<xs:element name="HideBase" type="xs:boolean" minOccurs="0"/>
 						<xs:element name="CanBeSold" type="xs:boolean"/>
 						<xs:element name="IsWall" type="xs:boolean"/>
-						<xs:element name="Upgrade">
+						<xs:element name="Upgrade" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Time" type="xs:float"/>
@@ -5890,7 +5890,7 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="UpgradeSite" type="xs:string"/>
+						<xs:element name="UpgradeSite" type="xs:string" minOccurs="0"/>
 						<xs:element name="ArmorClass" type="xs:string"/>
 						<xs:element name="ArmorAmount" type="xs:int"/>
 						<xs:element name="WorkTaskList" minOccurs="0" maxOccurs="unbounded">
@@ -5901,7 +5901,7 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="MilitaryInfo">
+						<xs:element name="MilitaryInfo" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="LeaderLimit" type="xs:int"/>
@@ -5910,23 +5910,23 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="CollapseTime" type="xs:float"/>
+						<xs:element name="CollapseTime" type="xs:float" minOccurs="0"/>
 						<xs:element name="Convertible" type="xs:boolean"/>
-						<xs:element name="ModifyExploration">
+						<xs:element name="ModifyExploration" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="ModifyArmor">
+						<xs:element name="ModifyArmor" minOccurs="0">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="Technology" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="KegEffectFactor" type="xs:float"/>
+						<xs:element name="KegEffectFactor" type="xs:float" minOccurs="0"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
