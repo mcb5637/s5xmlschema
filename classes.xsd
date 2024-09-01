@@ -8026,14 +8026,14 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="Effects">
+				<xs:element name="Effects" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Script" type="xs:string"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="ExplorationModifier">
+				<xs:element name="ExplorationModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8041,7 +8041,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="SpeedModifier">
+				<xs:element name="SpeedModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8049,7 +8049,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="HitpointModifier">
+				<xs:element name="HitpointModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8057,7 +8057,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="DamageModifier">
+				<xs:element name="DamageModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8065,7 +8065,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="DamageBonusModifier">
+				<xs:element name="DamageBonusModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8073,7 +8073,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="MaxRangeModifier">
+				<xs:element name="MaxRangeModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8081,7 +8081,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="MinRangeModifier">
+				<xs:element name="MinRangeModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8089,7 +8089,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="ArmorModifier">
+				<xs:element name="ArmorModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8097,7 +8097,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="DodgeModifier">
+				<xs:element name="DodgeModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
@@ -8105,7 +8105,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="GroupLimitModifier">
+				<xs:element name="GroupLimitModifier" minOccurs="0">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Value" type="xs:float"/>
