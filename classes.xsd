@@ -8679,6 +8679,8 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
+				<xs:element name="UpdateURL" type="xs:anyURI" minOccurs="0"/>
+				<xs:element name="VersionURL" type="xs:anyURI" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
 </xs:schema>
