@@ -8389,6 +8389,8 @@
 				<xs:element name="MainmenuMod" type="xs:boolean"/>
 				<xs:element name="KeepArchive" type="xs:boolean"/>
 				<xs:element name="UserRequestable" type="xs:boolean"/>
+				<xs:element name="UpdateURL" type="xs:anyURI" minOccurs="0"/>
+				<xs:element name="VersionURL" type="xs:anyURI" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
 </xs:schema>
