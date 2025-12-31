@@ -3739,6 +3739,432 @@
 						<xs:element name="DamageClass" type="xs:string"/>
 						<xs:element name="TaskList" type="xs:string"/>
 						<xs:element name="DistanceOverride" type="xs:float"/>
+						<xs:element name="EntityToCreate" type="xs:string"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__BombardmentAbilityProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__BombardmentAbilityProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::BombardmentAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x101e" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__BombardmentAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="Target" type="shok__Position"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__BombardmentAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__BombardmentAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::BombardmentAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x101f" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__Effect__PiercingShotEffect_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="EGL__CFlyingEffect_NoClassname">
+					<xs:sequence>
+						<xs:element name="AttackerID" type="xs:int"/>
+						<xs:element name="SourcePlayer" type="xs:int"/>
+						<xs:element name="DamageAmount" type="xs:int"/>
+						<xs:element name="AoERange" type="xs:float"/>
+						<xs:element name="DamageClass" type="xs:string"/>
+						<xs:element name="AdvancedDamageSourceOverride" type="xs:unsignedByte"/>
+						<xs:element name="AlreadyAffectedEntities" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__Effect__PiercingShotEffect">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__Effect__PiercingShotEffect_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::Effect::PiercingShotEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0x1020" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LimitedAmmoBehavior_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="RemainingAmmo" type="xs:int"/>
+						<xs:element name="MaxAmmo" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LimitedAmmoBehavior">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__LimitedAmmoBehavior_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::LimitedAmmoBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1021" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ReloadableCannonBuilderAbilityProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CCannonBuilderBehaviorProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="Reloads" type="xs:int"/>
+						<xs:element name="ReloadRange" type="xs:float"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ReloadableCannonBuilderAbilityProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ReloadableCannonBuilderAbilityProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ReloadableCannonBuilderAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1022" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ReloadableCannonBuilderAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CCannonBuilderBehavior_NoClassname">
+					<xs:sequence>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ReloadableCannonBuilderAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ReloadableCannonBuilderAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ReloadableCannonBuilderAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x1023" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedMarketBehavior_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="SellResources">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Gold" type="xs:float"/>
+									<xs:element name="Wood" type="xs:float"/>
+									<xs:element name="Clay" type="xs:float"/>
+									<xs:element name="Stone" type="xs:float"/>
+									<xs:element name="Iron" type="xs:float"/>
+									<xs:element name="Sulfur" type="xs:float"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="MinResources">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Gold" type="xs:float"/>
+									<xs:element name="Wood" type="xs:float"/>
+									<xs:element name="Clay" type="xs:float"/>
+									<xs:element name="Stone" type="xs:float"/>
+									<xs:element name="Iron" type="xs:float"/>
+									<xs:element name="Sulfur" type="xs:float"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="WorkSteps" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedMarketBehavior">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__AdvancedMarketBehavior_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::AdvancedMarketBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1025" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedMarketBehaviorProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CServiceBuildingBehaviorProperties_NoClassname">
+					<xs:sequence>
+						<xs:element name="WorkStepsNeededForTrade" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedMarketBehaviorProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__AdvancedMarketBehaviorProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::AdvancedMarketBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1026" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedFoundationBehaviorProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="EGL__CGLEBehaviorProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="Turret" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Turret" type="xs:string"/>
+									<xs:element name="Offset" type="shok__Position"/>
+									<xs:element name="BuyCost" type="shok__CostInfo"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedFoundationBehaviorProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__AdvancedFoundationBehaviorProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::AdvancedFoundationBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1027" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedFoundationBehavior_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="Turret" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Turret" type="xs:int"/>
+									<xs:element name="Active" type="xs:boolean"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__AdvancedFoundationBehavior">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__AdvancedFoundationBehavior_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::AdvancedFoundationBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1028" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LightningStrikeAbilityProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="Damage" type="xs:int"/>
+						<xs:element name="DamageClass" type="xs:string"/>
+						<xs:element name="Range" type="xs:float"/>
+						<xs:element name="DamageRange" type="xs:float"/>
+						<xs:element name="Effect" type="xs:string"/>
+						<xs:element name="WeatherEnergyCost" type="xs:float"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LightningStrikeAbilityProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__LightningStrikeAbilityProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::LightningStrikeAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1013" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LightningStrikeAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__LightningStrikeAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__LightningStrikeAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::LightningStrikeAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x1014" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__HawkCircleBehavior_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="ExploreTarget" type="shok__Position"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__HawkCircleBehavior">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__HawkCircleBehavior_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::HawkCircleBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1015" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__HawkOwnerAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__HawkOwnerAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__HawkOwnerAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::HawkOwnerAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x1016" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResDoodadRefillBehaviorProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="RefillAmount" type="xs:int"/>
+						<xs:element name="Effect" type="xs:string"/>
+						<xs:element name="AffectedTypes" type="xs:string"/>
+						<xs:element name="TaskList" type="xs:string"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResDoodadRefillBehaviorProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ResDoodadRefillBehaviorProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ResDoodadRefillBehaviorProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1017" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResDoodadRefillBehavior_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResDoodadRefillBehavior">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ResDoodadRefillBehavior_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ResDoodadRefillBehavior" use="required"/>
+					<xs:attribute name="classid" fixed="0x1018" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ShieldCoverAbilityProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="Range" type="xs:float"/>
+						<xs:element name="Duration" type="xs:int"/>
+						<xs:element name="TaskList" type="xs:string"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ShieldCoverAbilityProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ShieldCoverAbilityProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ShieldCoverAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x1019" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ShieldCoverAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="DurationLeft" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ShieldCoverAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ShieldCoverAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ShieldCoverAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x101a" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResurrectAbilityProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="Range" type="xs:float"/>
+						<xs:element name="ProgressPerTick" type="xs:int"/>
+						<xs:element name="TaskList" type="xs:string"/>
+						<xs:element name="RechargeAbilitiesBy" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResurrectAbilityProps">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ResurrectAbilityProps_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ResurrectAbilityProps" use="required"/>
+					<xs:attribute name="classid" fixed="0x101b" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResurrectAbility_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="BB__IObject_NoClassname">
+					<xs:sequence>
+						<xs:element name="Target" type="xs:int"/>
+						<xs:element name="SelfCasting" type="xs:boolean"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__ResurrectAbility">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__ResurrectAbility_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::ResurrectAbility" use="required"/>
+					<xs:attribute name="classid" fixed="0x101c" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__Effect__EntityPlacerEffect_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="EGL__CFlyingEffect_NoClassname">
+					<xs:sequence>
+						<xs:element name="Attacker" type="xs:int"/>
+						<xs:element name="ToCreate" type="xs:string"/>
+						<xs:element name="AttackerPlayer" type="xs:int"/>
+						<xs:element name="AttachCreated" type="xs:string"/>
+						<xs:element name="OnDetachAttacker" type="xs:int"/>
+						<xs:element name="OnDetachCreated" type="xs:int"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__Effect__EntityPlacerEffect">
+			<xs:complexContent>
+				<xs:extension base="CppLogic__Mod__Effect__EntityPlacerEffect_NoClassname">
+					<xs:attribute name="classname" fixed="CppLogic::Mod::Effect::EntityPlacerEffect" use="required"/>
+					<xs:attribute name="classid" fixed="0x101d" use="optional"/>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CppLogic__Mod__BombardmentAbilityProps_NoClassname">
+			<xs:complexContent>
+				<xs:extension base="GGL__CHeroAbilityProps_NoClassname">
+					<xs:sequence>
+						<xs:element name="EffectType" type="xs:string"/>
+						<xs:element name="AttackRange" type="xs:float"/>
+						<xs:element name="DamageRange" type="xs:float"/>
+						<xs:element name="Damage" type="xs:int"/>
+						<xs:element name="DamageClass" type="xs:string"/>
+						<xs:element name="TaskList" type="xs:string"/>
+						<xs:element name="DistanceOverride" type="xs:float"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -4443,7 +4869,7 @@
 						<xs:element name="SpreadTime" type="xs:int"/>
 						<xs:element name="SpreadDelay" type="xs:int"/>
 						<xs:element name="SpreadRadius" type="xs:float"/>
-						<xs:element name="SoundID" type="xs:string"/>
+						<xs:element name="SoundIDAgain" type="xs:string"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -8238,7 +8664,7 @@
 				<xs:element name="Faith" type="xs:float" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="EGL__EffectsProps__EffectData">
+	<xs:complexType name="EGL__EffectType">
 			<xs:sequence>
 				<xs:element name="Logic" type="BB__IObject_NoClassname"/>
 				<xs:element name="Display" type="BB__IObject_NoClassname"/>
@@ -8646,7 +9072,9 @@
 			<xs:sequence>
 				<xs:element name="LoaderPath" type="xs:string"/>
 				<xs:element name="ScriptPath" type="xs:string"/>
+				<xs:element name="MainmenuPath" type="xs:string"/>
 				<xs:element name="Version" type="xs:string"/>
+				<xs:element name="Description" type="xs:string"/>
 				<xs:element name="Required" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="Incompatible" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="Override" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
@@ -8655,23 +9083,24 @@
 				<xs:element name="MainmenuMod" type="xs:boolean"/>
 				<xs:element name="KeepArchive" type="xs:boolean"/>
 				<xs:element name="UserRequestable" type="xs:boolean"/>
+				<xs:element name="ScriptLib" type="xs:boolean"/>
 				<xs:element name="UpdateURL" type="xs:anyURI" minOccurs="0"/>
 				<xs:element name="VersionURL" type="xs:anyURI" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Framework__MapInfo">
 			<xs:sequence>
-				<xs:element name="NameKey"/>
-				<xs:element name="DescKey"/>
-				<xs:element name="Name"/>
-				<xs:element name="Desc"/>
-				<xs:element name="SizeX"/>
-				<xs:element name="SizeY"/>
-				<xs:element name="MPFlag"/>
-				<xs:element name="MPPlayerCount"/>
-				<xs:element name="MPGameOptionFlagSet"/>
-				<xs:element name="MiniMapTextureName"/>
-				<xs:element name="Key" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="NameKey" type="xs:string"/>
+				<xs:element name="DescKey" type="xs:string"/>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Desc" type="xs:string"/>
+				<xs:element name="SizeX" type="xs:int"/>
+				<xs:element name="SizeY" type="xs:int"/>
+				<xs:element name="MPFlag" type="xs:boolean"/>
+				<xs:element name="MPPlayerCount" type="xs:int"/>
+				<xs:element name="MPGameOptionFlagSet" type="xs:int"/>
+				<xs:element name="MiniMapTextureName" type="xs:string"/>
+				<xs:element name="Key" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="GUID">
 					<xs:complexType>
 						<xs:sequence>
