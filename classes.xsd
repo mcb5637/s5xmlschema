@@ -8812,6 +8812,16 @@
 				<xs:element name="Required" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="Incompatible" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="Override" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Settings" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Key" type="xs:string"/>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="Tooltip" type="xs:string"/>
+							<xs:element name="Options" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="DataMod" type="xs:boolean"/>
 				<xs:element name="ScriptMod" type="xs:boolean"/>
 				<xs:element name="MainmenuMod" type="xs:boolean"/>
