@@ -3430,6 +3430,9 @@
 					<xs:sequence>
 						<xs:element name="HealthOverride" type="xs:int"/>
 						<xs:element name="HealthUseBoni" type="xs:boolean"/>
+						<xs:element name="DamageUseBoni" type="xs:boolean"/>
+						<xs:element name="ArmorUseBoni" type="xs:boolean"/>
+						<xs:element name="ExplorationUseBoni" type="xs:boolean"/>
 						<xs:element name="DamageOverride" type="xs:int"/>
 						<xs:element name="ArmorOverride" type="xs:int"/>
 						<xs:element name="ExplorationOverride" type="xs:float"/>
@@ -3438,6 +3441,7 @@
 						<xs:element name="MaxRangeOverride" type="xs:float"/>
 						<xs:element name="NameOverride" type="xs:string"/>
 						<xs:element name="FakeTaskValue" type="xs:int"/>
+						<xs:element name="MaxRangeUseBoni" type="xs:boolean"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
@@ -8819,6 +8823,7 @@
 							<xs:element name="Name" type="xs:string"/>
 							<xs:element name="Tooltip" type="xs:string"/>
 							<xs:element name="Options" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="UI" type="xs:boolean"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
