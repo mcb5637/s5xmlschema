@@ -8861,4 +8861,21 @@
 				<xs:element name="VersionURL" type="xs:anyURI" minOccurs="0"/>
 			</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="CppLogic__ModLoader__ExtendedMapInfo">
+			<xs:complexContent>
+				<xs:extension base="Framework__MapInfo">
+					<xs:sequence>
+						<xs:element name="ModPacks">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Required" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+									<xs:element name="Incompatible" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+									<xs:element name="UserRequestable" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+	</xs:complexType>
 </xs:schema>
